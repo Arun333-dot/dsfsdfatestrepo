@@ -6,18 +6,25 @@ WITH deeply_nested_json AS (
 
 ),
 
-Reformat_1 AS (
+FlattenSchema_1 AS (
 
-  {#Extracts task status, notes, and team member roles from project data.#}
+  {#Simplifies complex project data to show roles, task statuses, and notes for better team management.#}
   SELECT 
-    projects.tasks.sub_tasks.status AS status,
-    projects.tasks.sub_tasks.notes.note AS note,
-    team.members.role AS role
+    members.col.role AS role,
+    sub_tasks.col.status AS status,
+    notes.col.note AS note,
+    id AS id
   
-  FROM deeply_nested_json AS in0
+  FROM deeply_nested_json AS in0, 
+  LATERAL explode_outer(team) AS team, 
+  LATERAL explode_outer(team.col.members) AS members, 
+  LATERAL explode_outer(projects) AS projects, 
+  LATERAL explode_outer(projects.col.tasks) AS tasks, 
+  LATERAL explode_outer(tasks.col.sub_tasks) AS sub_tasks, 
+  LATERAL explode_outer(sub_tasks.col.notes) AS notes
 
 )
 
 SELECT *
 
-FROM Reformat_1
+FROM FlattenSchema_1

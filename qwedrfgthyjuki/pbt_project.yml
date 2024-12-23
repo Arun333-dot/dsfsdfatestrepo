@@ -30,33 +30,18 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: status
-        dataType:
-          type: Array
-          dataType:
-            type: Array
-            dataType:
-              type: Array
-              dataType:
-                type: String
-      - name: note
-        dataType:
-          type: Array
-          dataType:
-            type: Array
-            dataType:
-              type: Array
-              dataType:
-                type: Array
-                dataType:
-                  type: String
       - name: role
         dataType:
-          type: Array
-          dataType:
-            type: Array
-            dataType:
-              type: String
+          type: String
+      - name: status
+        dataType:
+          type: String
+      - name: note
+        dataType:
+          type: String
+      - name: id
+        dataType:
+          type: Bigint
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:

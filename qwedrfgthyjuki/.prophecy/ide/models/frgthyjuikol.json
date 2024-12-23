@@ -18,13 +18,15 @@
         "x" : 100,
         "y" : -340,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves data from the previously formatted patient records.",
+        "autoUpdateComment" : true
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM Reformat_1\n",
+        "query" : "SELECT * \n\nFROM FlattenSchema_1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -33,7 +35,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "phvi9Ly0",
-          "slug" : "Reformat_1"
+          "slug" : "FlattenSchema_1"
         } ],
         "outputs" : [ {
           "id" : "uVR3Svao",
@@ -72,45 +74,81 @@
         "autoUpdateOnRun" : false
       }
     },
-    "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym" : {
-      "id" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
-      "component" : "Reformat",
+    "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij" : {
+      "id" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
+      "component" : "FlattenSchema",
       "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
-        "x" : -400,
-        "y" : -280,
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : -360,
+        "y" : -220,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "Extracts task status, notes, and team member roles from project data.",
+        "comment" : "Simplifies complex project data to show roles, task statuses, and notes for better team management.",
         "autoUpdateComment" : true
       },
       "properties" : {
-        "columnsSelector" : [ "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.status", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.notes", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.notes.note", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team.members", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team.members.role" ],
+        "columnsSelector" : [ "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb##team", "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb##projects", "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb##id" ],
+        "flattenExpressions" : [ {
+          "expression" : {
+            "expression" : "team"
+          },
+          "alias" : "team"
+        }, {
+          "expression" : {
+            "expression" : "team.col.members"
+          },
+          "alias" : "members"
+        }, {
+          "expression" : {
+            "expression" : "projects"
+          },
+          "alias" : "projects"
+        }, {
+          "expression" : {
+            "expression" : "projects.col.tasks"
+          },
+          "alias" : "tasks"
+        }, {
+          "expression" : {
+            "expression" : "tasks.col.sub_tasks"
+          },
+          "alias" : "sub_tasks"
+        }, {
+          "expression" : {
+            "expression" : "sub_tasks.col.notes"
+          },
+          "alias" : "notes"
+        } ],
         "expressions" : [ {
           "expression" : {
-            "expression" : "projects.tasks.sub_tasks.status"
+            "expression" : "members.col.role"
+          },
+          "alias" : "role"
+        }, {
+          "expression" : {
+            "expression" : "sub_tasks.col.status"
           },
           "alias" : "status"
         }, {
           "expression" : {
-            "expression" : "projects.tasks.sub_tasks.notes.note"
+            "expression" : "notes.col.note"
           },
           "alias" : "note"
         }, {
           "expression" : {
-            "expression" : "team.members.role"
+            "expression" : "id"
           },
-          "alias" : "role"
+          "alias" : "id"
         } ]
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY",
+          "id" : "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "Ostfg0Xcke_1Cfo5up3CC$$Jp_LvTc1wXBeBaIc6uYgW",
+          "id" : "UQsx_Ere4wHHTcTVo5HS0$$9nKfaoppcs-eorZJ8yLvF",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -119,17 +157,17 @@
     }
   },
   "connections" : [ {
-    "id" : "U4TRjxQ8NPVyNwnawHCuX$$nGgzCv7jBDKuM4zjBD2i2",
-    "source" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
-    "sourcePort" : "Ostfg0Xcke_1Cfo5up3CC$$Jp_LvTc1wXBeBaIc6uYgW",
-    "target" : "frgthyjuikol##N8YGqYBg",
-    "targetPort" : "phvi9Ly0"
-  }, {
-    "id" : "i0Tsly4J7Kb1L1AlRV38Z",
+    "id" : "LCOoAFbzTrXPmFhEfOP08",
     "source" : "7BwfgZrPwcW4l_ZF12p_R",
     "sourcePort" : "VWuc1ublmltL2xRza1drM",
-    "target" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
-    "targetPort" : "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY"
+    "target" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
+    "targetPort" : "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb"
+  }, {
+    "id" : "zWlvMIyXrLf4LGtONY34N",
+    "source" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
+    "sourcePort" : "UQsx_Ere4wHHTcTVo5HS0$$9nKfaoppcs-eorZJ8yLvF",
+    "target" : "frgthyjuikol##N8YGqYBg",
+    "targetPort" : "phvi9Ly0"
   } ],
   "component" : "Model"
 }
