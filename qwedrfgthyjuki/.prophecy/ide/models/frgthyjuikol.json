@@ -72,28 +72,45 @@
         "autoUpdateOnRun" : false
       }
     },
-    "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg" : {
-      "id" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
+    "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym" : {
+      "id" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : -600,
-        "y" : -140,
+        "x" : -400,
+        "y" : -280,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "comment" : "Extracts task status, notes, and team member roles from project data.",
+        "autoUpdateComment" : true
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.status", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.notes", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##projects.tasks.sub_tasks.notes.note", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team.members", "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY##team.members.role" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "projects.tasks.sub_tasks.status"
+          },
+          "alias" : "status"
+        }, {
+          "expression" : {
+            "expression" : "projects.tasks.sub_tasks.notes.note"
+          },
+          "alias" : "note"
+        }, {
+          "expression" : {
+            "expression" : "team.members.role"
+          },
+          "alias" : "role"
+        } ]
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "Y9W708RoZJg_yaGMm9A6F$$GXgZlZLm9kjMqUhfjz7jM",
+          "id" : "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "4WObiWnstUhKsAfAWwuNN$$hxNkEt5xGQL6eW28tgefZ",
+          "id" : "Ostfg0Xcke_1Cfo5up3CC$$Jp_LvTc1wXBeBaIc6uYgW",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -102,17 +119,17 @@
     }
   },
   "connections" : [ {
-    "id" : "fWlKrlgjivtvv__UHd1Ax",
-    "source" : "7BwfgZrPwcW4l_ZF12p_R",
-    "sourcePort" : "VWuc1ublmltL2xRza1drM",
-    "target" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
-    "targetPort" : "Y9W708RoZJg_yaGMm9A6F$$GXgZlZLm9kjMqUhfjz7jM"
-  }, {
-    "id" : "mnuAjhdDtJb7sXEC_KDM-",
-    "source" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
-    "sourcePort" : "4WObiWnstUhKsAfAWwuNN$$hxNkEt5xGQL6eW28tgefZ",
+    "id" : "U4TRjxQ8NPVyNwnawHCuX$$nGgzCv7jBDKuM4zjBD2i2",
+    "source" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
+    "sourcePort" : "Ostfg0Xcke_1Cfo5up3CC$$Jp_LvTc1wXBeBaIc6uYgW",
     "target" : "frgthyjuikol##N8YGqYBg",
     "targetPort" : "phvi9Ly0"
+  }, {
+    "id" : "i0Tsly4J7Kb1L1AlRV38Z",
+    "source" : "7BwfgZrPwcW4l_ZF12p_R",
+    "sourcePort" : "VWuc1ublmltL2xRza1drM",
+    "target" : "eT_DR8cKEe3to4bAIp28s$$9Zxw-YjGFHpi9jRkFC7Ym",
+    "targetPort" : "BQpmjMvyNc86PAV5M1rt8$$cklqi9Nvx5KX1HzHVP_VY"
   } ],
   "component" : "Model"
 }

@@ -30,115 +30,33 @@ sqlModels:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: age
-        dataType:
-          type: Bigint
-      - name: id
-        dataType:
-          type: Bigint
-      - name: name
-        dataType:
-          type: String
-      - name: projects
+      - name: status
         dataType:
           type: Array
           dataType:
-            type: Struct
-            fields:
-            - name: deadline
-              dataType:
-                type: Timestamp
-            - name: project_name
+            type: Array
+            dataType:
+              type: Array
               dataType:
                 type: String
-            - name: tasks
-              dataType:
-                type: Array
-                dataType:
-                  type: Struct
-                  fields:
-                  - name: assigned_to
-                    dataType:
-                      type: String
-                  - name: sub_tasks
-                    dataType:
-                      type: Array
-                      dataType:
-                        type: Struct
-                        fields:
-                        - name: notes
-                          dataType:
-                            type: Array
-                            dataType:
-                              type: Struct
-                              fields:
-                              - name: note
-                                dataType:
-                                  type: String
-                        - name: status
-                          dataType:
-                            type: String
-                        - name: sub_task_name
-                          dataType:
-                            type: String
-                  - name: task_name
-                    dataType:
-                      type: String
-      - name: salary
-        dataType:
-          type: Bigint
-      - name: tags
+      - name: note
         dataType:
           type: Array
           dataType:
-            type: String
-      - name: team
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: Array
+                dataType:
+                  type: String
+      - name: role
         dataType:
           type: Array
           dataType:
-            type: Struct
-            fields:
-            - name: members
-              dataType:
-                type: Array
-                dataType:
-                  type: Struct
-                  fields:
-                  - name: name
-                    dataType:
-                      type: String
-                  - name: role
-                    dataType:
-                      type: String
-            - name: tasks
-              dataType:
-                type: Array
-                dataType:
-                  type: Struct
-                  fields:
-                  - name: assigned_to
-                    dataType:
-                      type: Array
-                      dataType:
-                        type: String
-                  - name: sub_tasks
-                    dataType:
-                      type: Array
-                      dataType:
-                        type: Struct
-                        fields:
-                        - name: status
-                          dataType:
-                            type: String
-                        - name: sub_task_name
-                          dataType:
-                            type: String
-                  - name: task_name
-                    dataType:
-                      type: String
-            - name: team_name
-              dataType:
-                type: String
+            type: Array
+            dataType:
+              type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:

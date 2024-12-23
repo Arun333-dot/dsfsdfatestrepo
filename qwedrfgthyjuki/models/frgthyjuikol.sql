@@ -8,7 +8,11 @@ WITH deeply_nested_json AS (
 
 Reformat_1 AS (
 
-  SELECT * 
+  {#Extracts task status, notes, and team member roles from project data.#}
+  SELECT 
+    projects.tasks.sub_tasks.status AS status,
+    projects.tasks.sub_tasks.notes.note AS note,
+    team.members.role AS role
   
   FROM deeply_nested_json AS in0
 
