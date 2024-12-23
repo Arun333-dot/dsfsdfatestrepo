@@ -23,8 +23,37 @@ FlattenSchema_1 AS (
   LATERAL explode_outer(tasks.col.sub_tasks) AS sub_tasks, 
   LATERAL explode_outer(sub_tasks.col.notes) AS notes
 
+),
+
+Reformat_1 AS (
+
+  SELECT * 
+  
+  FROM FlattenSchema_1 AS in0
+
+),
+
+Limit_1 AS (
+
+  SELECT * 
+  
+  FROM Reformat_1 AS in0
+  
+  LIMIT 10
+
+),
+
+OrderBy_1 AS (
+
+  {#Organizes data by user roles for better clarity and management.#}
+  SELECT * 
+  
+  FROM Limit_1 AS in0
+  
+  ORDER BY role ASC
+
 )
 
 SELECT *
 
-FROM FlattenSchema_1
+FROM OrderBy_1

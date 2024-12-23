@@ -10,78 +10,14 @@
     "version" : 3
   },
   "processes" : {
-    "frgthyjuikol##N8YGqYBg" : {
-      "id" : "frgthyjuikol##N8YGqYBg",
-      "component" : "TargetModel",
-      "metadata" : {
-        "label" : "frgthyjuikol",
-        "x" : 100,
-        "y" : -340,
-        "phase" : 0,
-        "macroDependencies" : [ ],
-        "comment" : "Retrieves data from the previously formatted patient records.",
-        "autoUpdateComment" : true
-      },
-      "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM FlattenSchema_1\n",
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "phvi9Ly0",
-          "slug" : "FlattenSchema_1"
-        } ],
-        "outputs" : [ {
-          "id" : "uVR3Svao",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "7BwfgZrPwcW4l_ZF12p_R" : {
-      "id" : "7BwfgZrPwcW4l_ZF12p_R",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "deeply_nested_json",
-        "slug" : "deeply_nested_json",
-        "x" : -860,
-        "y" : 100,
-        "phase" : 0
-      },
-      "properties" : {
-        "table" : {
-          "name" : "deeply_nested_json",
-          "sourceType" : "Source",
-          "sourceName" : "hive_metastore.rohit",
-          "alias" : "",
-          "additionalProperties" : null
-        }
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "VWuc1ublmltL2xRza1drM",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
     "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij" : {
       "id" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
       "component" : "FlattenSchema",
       "metadata" : {
         "label" : "FlattenSchema_1",
         "slug" : "FlattenSchema_1",
-        "x" : -360,
-        "y" : -220,
+        "x" : -620,
+        "y" : -320,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "Simplifies complex project data to show roles, task statuses, and notes for better team management.",
@@ -154,6 +90,162 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS" : {
+      "id" : "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -100,
+        "y" : -320,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "10"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "bIs6dO_KEGpeixMdPk8gW$$hZpSFdoLXNMAPNUZ_66YV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FlsjwtA_fMdaeA6Ps8lHI$$wRJkGr8A_bvI73HVG3UtJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "7BwfgZrPwcW4l_ZF12p_R" : {
+      "id" : "7BwfgZrPwcW4l_ZF12p_R",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "deeply_nested_json",
+        "slug" : "deeply_nested_json",
+        "x" : -860,
+        "y" : 100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "deeply_nested_json",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VWuc1ublmltL2xRza1drM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "d1D0vRfw7q9HJLraBydE5$$OvBEGYW5j_KFsYRz4qBOi" : {
+      "id" : "d1D0vRfw7q9HJLraBydE5$$OvBEGYW5j_KFsYRz4qBOi",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -260,
+        "y" : -320,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "u4AjfXl-cQvKWdkZEvmj8$$HSvfLyswYPNLQdJ8gORv6",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "7fOmMD0hWTpUS8Dje-KHh$$78UIxhkwjbSLR_RoPcy64",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK" : {
+      "id" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 60,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Organizes data by user roles for better clarity and management.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "pWmNoWwvJA6CeRKlGz0-Q$$6mwFrwcThcYzf9ft7Ynxe##role" ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "role"
+          },
+          "sortType" : "asc"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pWmNoWwvJA6CeRKlGz0-Q$$6mwFrwcThcYzf9ft7Ynxe",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "pjq3zXYyleb8H7IHoOALl$$NgXNu90956MBjn9I3RFO-",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "frgthyjuikol##N8YGqYBg" : {
+      "id" : "frgthyjuikol##N8YGqYBg",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "frgthyjuikol",
+        "x" : 100,
+        "y" : -340,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves data from the previously formatted patient records.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM OrderBy_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "phvi9Ly0",
+          "slug" : "OrderBy_1"
+        } ],
+        "outputs" : [ {
+          "id" : "uVR3Svao",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {
@@ -163,11 +255,29 @@
     "target" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
     "targetPort" : "LXE2YvUncUYVuzzRMD2ve$$xOKv0IMlEwgDVY-NZ04vb"
   }, {
-    "id" : "zWlvMIyXrLf4LGtONY34N",
+    "id" : "Fj2m4o3i_5HsflaM_to6b",
     "source" : "QJx5BRBGBZ0DvcqWtNeBW$$q-rVhZlCQ53q_5JFQmXij",
     "sourcePort" : "UQsx_Ere4wHHTcTVo5HS0$$9nKfaoppcs-eorZJ8yLvF",
+    "target" : "d1D0vRfw7q9HJLraBydE5$$OvBEGYW5j_KFsYRz4qBOi",
+    "targetPort" : "u4AjfXl-cQvKWdkZEvmj8$$HSvfLyswYPNLQdJ8gORv6"
+  }, {
+    "id" : "Y9k6nzOX9rTwBt5EjA_Ez$$2taNJs_WgYMwsxJJpU5cz",
+    "source" : "d1D0vRfw7q9HJLraBydE5$$OvBEGYW5j_KFsYRz4qBOi",
+    "sourcePort" : "7fOmMD0hWTpUS8Dje-KHh$$78UIxhkwjbSLR_RoPcy64",
+    "target" : "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS",
+    "targetPort" : "bIs6dO_KEGpeixMdPk8gW$$hZpSFdoLXNMAPNUZ_66YV"
+  }, {
+    "id" : "vrc-SQW7oAB2JGJSsmVp9$$KT-Y74c_mGY2nuDaenpyW",
+    "source" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
+    "sourcePort" : "pjq3zXYyleb8H7IHoOALl$$NgXNu90956MBjn9I3RFO-",
     "target" : "frgthyjuikol##N8YGqYBg",
     "targetPort" : "phvi9Ly0"
+  }, {
+    "id" : "xS7P15N0J9inbjb5LYZVM",
+    "source" : "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS",
+    "sourcePort" : "FlsjwtA_fMdaeA6Ps8lHI$$wRJkGr8A_bvI73HVG3UtJ",
+    "target" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
+    "targetPort" : "pWmNoWwvJA6CeRKlGz0-Q$$6mwFrwcThcYzf9ft7Ynxe"
   } ],
   "component" : "Model"
 }
