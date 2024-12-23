@@ -52,8 +52,34 @@ OrderBy_1 AS (
   
   ORDER BY role ASC
 
+),
+
+Subgraph_1 AS (
+
+  WITH Reformat_1_1 AS (
+  
+    SELECT * 
+    
+    FROM OrderBy_1 AS in0
+  
+  ),
+  
+  Limit_1_1 AS (
+  
+    SELECT * 
+    
+    FROM Reformat_1_1 AS in0
+    
+    LIMIT 10
+  
+  )
+  
+  SELECT * 
+  
+  FROM Limit_1_1
+
 )
 
 SELECT *
 
-FROM OrderBy_1
+FROM Subgraph_1

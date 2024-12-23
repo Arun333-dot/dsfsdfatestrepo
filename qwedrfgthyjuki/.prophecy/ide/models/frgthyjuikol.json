@@ -120,6 +120,210 @@
         "autoUpdateOnRun" : false
       }
     },
+    "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt" : {
+      "id" : "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : -60,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "processes" : {
+        "07OZtM7PsKvjJuG1qRgtV$$1wJt5_PYkwu5d3YGkGW8z" : {
+          "id" : "07OZtM7PsKvjJuG1qRgtV$$1wJt5_PYkwu5d3YGkGW8z",
+          "component" : "Limit",
+          "metadata" : {
+            "label" : "Limit_1_1",
+            "slug" : "Limit_1_1",
+            "x" : 40,
+            "y" : -300,
+            "phase" : 0,
+            "macroDependencies" : [ ]
+          },
+          "properties" : {
+            "limit" : {
+              "expression" : "10"
+            }
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "HfuYRnHoXWGXdh8l2OYWb$$tI3aKN87JunWj5J8RL2Ly",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "role",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "status",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "note",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                } ]
+              },
+              "slug" : "in0"
+            } ],
+            "outputs" : [ {
+              "id" : "dieEjQouEeV26j1_9-WBL$$TkAAKq8hBUZmXblsRmzgL",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "role",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "status",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "note",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                } ]
+              },
+              "slug" : "out"
+            } ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          }
+        },
+        "_TQ8b6AMZoHm3BAIPdTnO$$_4OHSJGZaB8JbIeeBw0MG" : {
+          "id" : "_TQ8b6AMZoHm3BAIPdTnO$$_4OHSJGZaB8JbIeeBw0MG",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_1_1",
+            "slug" : "Reformat_1_1",
+            "x" : -120,
+            "y" : -300,
+            "phase" : 0,
+            "macroDependencies" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ ],
+            "expressions" : [ ]
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "7jWq8t8Ll_bALtpO0Qmnk$$Ms8noTqwiKjasRn8Ogaf4",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "role",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "status",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "note",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                } ]
+              },
+              "slug" : "in0"
+            } ],
+            "outputs" : [ {
+              "id" : "BrGJQuOvPUiUIf-qspYTy$$uKI--MgXAdeOlKqmKays7",
+              "schema" : {
+                "entityType" : "",
+                "providerType" : "Databricks",
+                "fields" : [ {
+                  "name" : "role",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "status",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "note",
+                  "dataType" : {
+                    "type" : "String"
+                  }
+                }, {
+                  "name" : "id",
+                  "dataType" : {
+                    "type" : "Bigint"
+                  }
+                } ]
+              },
+              "slug" : "out"
+            } ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          }
+        }
+      },
+      "connections" : [ {
+        "id" : "y1yO3jRGRSUDMU2nnQvwq",
+        "source" : "_TQ8b6AMZoHm3BAIPdTnO$$_4OHSJGZaB8JbIeeBw0MG",
+        "sourcePort" : "BrGJQuOvPUiUIf-qspYTy$$uKI--MgXAdeOlKqmKays7",
+        "target" : "07OZtM7PsKvjJuG1qRgtV$$1wJt5_PYkwu5d3YGkGW8z",
+        "targetPort" : "HfuYRnHoXWGXdh8l2OYWb$$tI3aKN87JunWj5J8RL2Ly"
+      }, {
+        "id" : "5kgU5S7PUQY9NOeshcxSS",
+        "source" : "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt",
+        "sourcePort" : "7nzsNToyWlfHo_2p6v-Mi$$aWLTgKPAeoKi5GMfNNzx3",
+        "target" : "_TQ8b6AMZoHm3BAIPdTnO$$_4OHSJGZaB8JbIeeBw0MG",
+        "targetPort" : "7jWq8t8Ll_bALtpO0Qmnk$$Ms8noTqwiKjasRn8Ogaf4"
+      }, {
+        "id" : "KBHyZo0ZFFBmCQNVz10kb",
+        "source" : "07OZtM7PsKvjJuG1qRgtV$$1wJt5_PYkwu5d3YGkGW8z",
+        "sourcePort" : "dieEjQouEeV26j1_9-WBL$$TkAAKq8hBUZmXblsRmzgL",
+        "target" : "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt",
+        "targetPort" : "jgThkgl9O8xoJ5546Gann$$RWCPkGi9VCwJR6EqVFarZ"
+      } ],
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7nzsNToyWlfHo_2p6v-Mi$$aWLTgKPAeoKi5GMfNNzx3",
+          "slug" : "OrderBy_1"
+        } ],
+        "outputs" : [ {
+          "id" : "jgThkgl9O8xoJ5546Gann$$RWCPkGi9VCwJR6EqVFarZ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "canonical" : false
+    },
     "7BwfgZrPwcW4l_ZF12p_R" : {
       "id" : "7BwfgZrPwcW4l_ZF12p_R",
       "component" : "Source",
@@ -183,8 +387,8 @@
       "metadata" : {
         "label" : "OrderBy_1",
         "slug" : "OrderBy_1",
-        "x" : 60,
-        "y" : -40,
+        "x" : -280,
+        "y" : 40,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "Organizes data by user roles for better clarity and management.",
@@ -228,7 +432,7 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM OrderBy_1\n",
+        "query" : "SELECT * \n\nFROM Subgraph_1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -237,7 +441,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "phvi9Ly0",
-          "slug" : "OrderBy_1"
+          "slug" : "Subgraph_1"
         } ],
         "outputs" : [ {
           "id" : "uVR3Svao",
@@ -267,17 +471,23 @@
     "target" : "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS",
     "targetPort" : "bIs6dO_KEGpeixMdPk8gW$$hZpSFdoLXNMAPNUZ_66YV"
   }, {
-    "id" : "vrc-SQW7oAB2JGJSsmVp9$$KT-Y74c_mGY2nuDaenpyW",
-    "source" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
-    "sourcePort" : "pjq3zXYyleb8H7IHoOALl$$NgXNu90956MBjn9I3RFO-",
-    "target" : "frgthyjuikol##N8YGqYBg",
-    "targetPort" : "phvi9Ly0"
-  }, {
     "id" : "xS7P15N0J9inbjb5LYZVM",
     "source" : "NcVE6cvNOSASQjZQm0YwD$$gaXDozcqXQVt10pejGYXS",
     "sourcePort" : "FlsjwtA_fMdaeA6Ps8lHI$$wRJkGr8A_bvI73HVG3UtJ",
     "target" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
     "targetPort" : "pWmNoWwvJA6CeRKlGz0-Q$$6mwFrwcThcYzf9ft7Ynxe"
+  }, {
+    "id" : "Z44afXqymENqjwhdBiRKR",
+    "source" : "3A9wMiH0v64qtZRdSkHRA$$TqhMysiIptPXnso2gkygK",
+    "sourcePort" : "pjq3zXYyleb8H7IHoOALl$$NgXNu90956MBjn9I3RFO-",
+    "target" : "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt",
+    "targetPort" : "7nzsNToyWlfHo_2p6v-Mi$$aWLTgKPAeoKi5GMfNNzx3"
+  }, {
+    "id" : "GMrVWH8eRJsT8itBdm77Q",
+    "source" : "AYmIoRiCyhNM7xDppTiZa$$JLEs8qxPOvTEUSGSNqRxt",
+    "sourcePort" : "jgThkgl9O8xoJ5546Gann$$RWCPkGi9VCwJR6EqVFarZ",
+    "target" : "frgthyjuikol##N8YGqYBg",
+    "targetPort" : "phvi9Ly0"
   } ],
   "component" : "Model"
 }
