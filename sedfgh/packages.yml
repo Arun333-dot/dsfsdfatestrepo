@@ -1,0 +1,5 @@
+---
+packages:
+- revision: "sqlprojecrtesting/v1"
+  git: "http://gitserver:3000/ku6kXQiA_team_3/P0tX3Stt_project_14537.git"
+  subdirectory: ""

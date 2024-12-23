@@ -1,0 +1,1029 @@
+{
+  "id" : "flattenschema",
+  "metainfo" : {
+    "label" : "flattenschema",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "databricks_null",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "databricks_null_1",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id", "age", "department" ],
+            "conditions" : [ {
+              "alias" : "databricks_null_1",
+              "expression" : {
+                "expression" : "databricks_null_1.age = databricks123.age AND databricks_null_1.department = databricks123.department AND databricks_null_1.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "databricks_null_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id", "age", "department" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "nested_arraysjosn",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "nested_arraysjosn_1",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id", "age", "department" ],
+            "conditions" : [ {
+              "alias" : "nested_arraysjosn_1",
+              "expression" : {
+                "expression" : "nested_arraysjosn_1.age = databricks123.age AND nested_arraysjosn_1.department = databricks123.department AND nested_arraysjosn_1.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "nested_arraysjosn_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id", "age", "department" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "raw_customers",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "raw_customers",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_customers",
+              "expression" : {
+                "expression" : "raw_customers.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_customers.first_name"
+              },
+              "alias" : "first_name"
+            }, {
+              "expression" : {
+                "expression" : "raw_customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "raw_customers",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "raw_data",
+            "sourceName" : "hive_metastore.aditya",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "raw_data",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_data",
+              "expression" : {
+                "expression" : "raw_data.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_data.value"
+              },
+              "alias" : "value"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "raw_data",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id" ],
+          "isRecommended" : true
+        }, {
+          "processLabel" : "databricks_null",
+          "processId" : "quphXO5pX6CQA0_z_-UaP",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_data",
+              "expression" : {
+                "expression" : "raw_data.id = databricks_null.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_data.value"
+              },
+              "alias" : "value"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.hobbies"
+              },
+              "alias" : "hobbies"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks_null.name"
+              },
+              "alias" : "name"
+            } ],
+            "headAlias" : "raw_data",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id" ],
+          "isRecommended" : false
+        }, {
+          "processLabel" : "databricks_large",
+          "processId" : "pct9Ms-GQ_O9HqedoZk9k",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_data",
+              "expression" : {
+                "expression" : "raw_data.id = databricks_large.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_data.value"
+              },
+              "alias" : "value"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.hobbies"
+              },
+              "alias" : "hobbies"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.nested_array"
+              },
+              "alias" : "nested_array"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks_large.id"
+              },
+              "alias" : "id"
+            } ],
+            "headAlias" : "raw_data",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "raw_orders",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "raw_orders",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id" ],
+            "conditions" : [ {
+              "alias" : "raw_orders",
+              "expression" : {
+                "expression" : "raw_orders.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "raw_orders.user_id"
+              },
+              "alias" : "user_id"
+            }, {
+              "expression" : {
+                "expression" : "raw_orders.order_date"
+              },
+              "alias" : "order_date"
+            }, {
+              "expression" : {
+                "expression" : "raw_orders.status"
+              },
+              "alias" : "status"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "raw_orders",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "databricks_flatten_jsonarray",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "databricks_flatten_jsonarray_1",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id", "age", "department" ],
+            "conditions" : [ {
+              "alias" : "databricks_flatten_jsonarray_1",
+              "expression" : {
+                "expression" : "databricks_flatten_jsonarray_1.age = databricks123.age AND databricks_flatten_jsonarray_1.department = databricks123.department AND databricks_flatten_jsonarray_1.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "databricks_flatten_jsonarray_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id", "age", "department" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "databricks_large",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "databricks_large_1",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id", "age", "department" ],
+            "conditions" : [ {
+              "alias" : "databricks_large_1",
+              "expression" : {
+                "expression" : "databricks_large_1.age = databricks123.age AND databricks_large_1.department = databricks123.department AND databricks_large_1.id = databricks123.id"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "databricks_large_1.nested_array"
+              },
+              "alias" : "nested_array"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "databricks_large_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id", "age", "department" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "deeply_nested_json",
+            "sourceName" : "hive_metastore.rohit",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "deeply_nested_json",
+        "canJoinWith" : [ {
+          "processLabel" : "databricks123",
+          "processId" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "id", "age", "name" ],
+            "conditions" : [ {
+              "alias" : "deeply_nested_json",
+              "expression" : {
+                "expression" : "deeply_nested_json.age = databricks123.age AND deeply_nested_json.id = databricks123.id AND deeply_nested_json.name = databricks123.name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "deeply_nested_json.tags"
+              },
+              "alias" : "tags"
+            }, {
+              "expression" : {
+                "expression" : "deeply_nested_json.team"
+              },
+              "alias" : "team"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.salary"
+              },
+              "alias" : "salary"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.projects"
+              },
+              "alias" : "projects"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.experience_years"
+              },
+              "alias" : "experience_years"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.name"
+              },
+              "alias" : "name"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.age"
+              },
+              "alias" : "age"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.department"
+              },
+              "alias" : "department"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "databricks123.hobbies"
+              },
+              "alias" : "hobbies"
+            } ],
+            "headAlias" : "deeply_nested_json",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "id", "age", "name" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "4Qvuf5vtGs1t2i3_yjPAL$$Esm7oMYVlwAyL_Dk3dSEz" : {
+      "id" : "4Qvuf5vtGs1t2i3_yjPAL$$Esm7oMYVlwAyL_Dk3dSEz",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "project_durations",
+        "slug" : "project_durations",
+        "x" : -200,
+        "y" : -20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Extracts project duration details from nested project data.",
+        "autoUpdateComment" : true,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "ySWPC0kOiHRFdVxbzMU6F$$mOvXHK9y67Yt2wfHphli3##projects" ],
+        "flattenExpressions" : [ {
+          "expression" : {
+            "expression" : "projects"
+          },
+          "alias" : "projects"
+        }, {
+          "expression" : {
+            "expression" : "projects.col.nested_array"
+          },
+          "alias" : "nested_array"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "nested_array.col"
+          },
+          "alias" : "projects_nested_array"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ySWPC0kOiHRFdVxbzMU6F$$mOvXHK9y67Yt2wfHphli3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "-GPSa3kaUXZjzvYt_ky_i$$nNaFdU4JE6eUXRzU1sWFV",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "flattenschema##wB0cVrRg" : {
+      "id" : "flattenschema##wB0cVrRg",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "flattenschema",
+        "x" : 60,
+        "y" : -20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM project_durations\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sXXvfWFx",
+          "slug" : "project_durations"
+        } ],
+        "outputs" : [ {
+          "id" : "AedYlivf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "quphXO5pX6CQA0_z_-UaP" : {
+      "id" : "quphXO5pX6CQA0_z_-UaP",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks_null",
+        "slug" : "databricks_null",
+        "x" : -640,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks_null",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "m6DCKqIIC1XEtsyUKijEk",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "6WQX81db-NLNhyMhDUiC8" : {
+      "id" : "6WQX81db-NLNhyMhDUiC8",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "nested_arraysjosn",
+        "slug" : "nested_arraysjosn",
+        "x" : -440,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "nested_arraysjosn",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YfgfFwuvXZ3yQWXqFPozd",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "gKKgTe_bjpaWUEi_QBL9p$$ehuQcwOhTdqN-pBW8zpqc" : {
+      "id" : "gKKgTe_bjpaWUEi_QBL9p$$ehuQcwOhTdqN-pBW8zpqc",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "age_selection",
+        "slug" : "age_selection",
+        "x" : -440,
+        "y" : -260,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Extracts age data from a structured dataset for demographic analysis.",
+        "autoUpdateComment" : true,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "flattenExpressions" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "age"
+          },
+          "alias" : "age"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3KJHeuCPxRnsMUUNrKMXM$$2Tr1fCzOH2hwF86V0hakX",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "IeibAgXWBdDC5Fs5lJ7sr$$0310h7AmEHNx6BbCg-HAR",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "pct9Ms-GQ_O9HqedoZk9k" : {
+      "id" : "pct9Ms-GQ_O9HqedoZk9k",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks_large",
+        "slug" : "databricks_large",
+        "x" : -140,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks_large",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "PbS6ZiITWchIOaVmHyEUr",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD" : {
+      "id" : "MiI6X3gJgWRrIil_ynWkn$$MIMc2IrRgeK0ldquYvqrD",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks123",
+        "slug" : "databricks123",
+        "x" : -140,
+        "y" : -380,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks123",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "V1YiQ0iWEztIusazubm4I$$mO_qDaaWmyO-5dnBQcmFp",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Ah0FbxyGjP2U5sCUmjp4b" : {
+      "id" : "Ah0FbxyGjP2U5sCUmjp4b",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks_flatten_jsonarray",
+        "slug" : "databricks_flatten_jsonarray",
+        "x" : -600,
+        "y" : -40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks_flatten_jsonarray",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sF_r4PbRNqBl7iFql8-Zv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "eXoWjLPL4Wa8Tu4-Vgoz-",
+    "source" : "6WQX81db-NLNhyMhDUiC8",
+    "sourcePort" : "YfgfFwuvXZ3yQWXqFPozd",
+    "target" : "4Qvuf5vtGs1t2i3_yjPAL$$Esm7oMYVlwAyL_Dk3dSEz",
+    "targetPort" : "ySWPC0kOiHRFdVxbzMU6F$$mOvXHK9y67Yt2wfHphli3"
+  }, {
+    "id" : "7AK1K16fRYqM_7iR0Eh6P",
+    "source" : "4Qvuf5vtGs1t2i3_yjPAL$$Esm7oMYVlwAyL_Dk3dSEz",
+    "sourcePort" : "-GPSa3kaUXZjzvYt_ky_i$$nNaFdU4JE6eUXRzU1sWFV",
+    "target" : "flattenschema##wB0cVrRg",
+    "targetPort" : "sXXvfWFx"
+  }, {
+    "id" : "Nvq2GzqN8pWS2ttwo_6hK",
+    "source" : "Ah0FbxyGjP2U5sCUmjp4b",
+    "sourcePort" : "sF_r4PbRNqBl7iFql8-Zv",
+    "target" : "gKKgTe_bjpaWUEi_QBL9p$$ehuQcwOhTdqN-pBW8zpqc",
+    "targetPort" : "3KJHeuCPxRnsMUUNrKMXM$$2Tr1fCzOH2hwF86V0hakX"
+  } ],
+  "component" : "Model"
+}
