@@ -1,0 +1,206 @@
+---
+version: 2
+sources:
+- name: "qa_performance.arun_test"
+  database: "qa_performance"
+  schema: "arun_test"
+  config:
+    enabled: true
+  tables:
+  - name: "databricks_large"
+    description: "Employee data encompassing personal details, salary, department,\
+      \ and experience, aiding in workforce analysis and planning."
+    quoting:
+      identifier: true
+    columns:
+    - name: "age"
+      description: "The age of the individual"
+      dataType:
+        type: "Bigint"
+    - name: "department"
+      description: "The department where the employee works"
+      dataType:
+        type: "String"
+    - name: "experience_years"
+      description: "Number of years of experience the individual has"
+      dataType:
+        type: "Bigint"
+    - name: "hobbies"
+      description: "List of hobbies associated with the individual"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "String"
+    - name: "id"
+      description: "Unique identifier for each individual in the dataset"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      description: "The name of the individual"
+      dataType:
+        type: "String"
+    - name: "nested_array"
+      description: "A collection of grouped hobbies or interests"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Array"
+          dataType:
+            type: "String"
+    - name: "salary"
+      description: "The annual salary of the employee"
+      dataType:
+        type: "Double"
+- name: "hive_metastore.rohit"
+  database: "hive_metastore"
+  schema: "rohit"
+  config:
+    enabled: true
+  tables:
+  - name: "deeply_nested_json"
+    description: "Comprehensive employee project and task management data, capturing\
+      \ details on assignments, deadlines, and team structures."
+    quoting:
+      identifier: true
+    columns:
+    - name: "age"
+      description: "The age of the individual"
+      dataType:
+        type: "Bigint"
+    - name: "id"
+      description: "Unique identifier for the individual"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      description: "The name of the individual"
+      dataType:
+        type: "String"
+    - name: "projects"
+      description: "List of projects associated with the individual"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "deadline"
+            dataType:
+              type: "Timestamp"
+            description: "The deadline for the project"
+          - name: "project_name"
+            dataType:
+              type: "String"
+            description: "The name of the project"
+          - name: "tasks"
+            dataType:
+              type: "Array"
+              dataType:
+                type: "Struct"
+                fields:
+                - name: "assigned_to"
+                  dataType:
+                    type: "String"
+                  description: "Names of individuals assigned to each task"
+                - name: "sub_tasks"
+                  dataType:
+                    type: "Array"
+                    dataType:
+                      type: "Struct"
+                      fields:
+                      - name: "notes"
+                        dataType:
+                          type: "Array"
+                          dataType:
+                            type: "Struct"
+                            fields:
+                            - name: "note"
+                              dataType:
+                                type: "String"
+                              description: "Notes associated with a specific sub-task"
+                        description: "Notes related to each sub-task for additional\
+                          \ context"
+                      - name: "status"
+                        dataType:
+                          type: "String"
+                        description: "Current status of the sub-task"
+                      - name: "sub_task_name"
+                        dataType:
+                          type: "String"
+                        description: "Name of the sub-task within a project task"
+                  description: "List of sub-tasks associated with each task in the\
+                    \ project"
+                - name: "task_name"
+                  dataType:
+                    type: "String"
+                  description: "Name of the main task within a project"
+            description: "List of tasks associated with each project"
+    - name: "salary"
+      description: "The annual salary of the individual"
+      dataType:
+        type: "Bigint"
+    - name: "tags"
+      description: "Labels associated with the individual for categorization"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "String"
+    - name: "team"
+      description: "List of teams associated with the individual"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "members"
+            dataType:
+              type: "Array"
+              dataType:
+                type: "Struct"
+                fields:
+                - name: "name"
+                  dataType:
+                    type: "String"
+                  description: "Name of the team member"
+                - name: "role"
+                  dataType:
+                    type: "String"
+                  description: "Role of the team member within the project"
+            description: "Members belonging to each team, including their names and\
+              \ roles"
+          - name: "tasks"
+            dataType:
+              type: "Array"
+              dataType:
+                type: "Struct"
+                fields:
+                - name: "assigned_to"
+                  dataType:
+                    type: "Array"
+                    dataType:
+                      type: "String"
+                  description: "Individuals assigned to specific tasks within the\
+                    \ team"
+                - name: "sub_tasks"
+                  dataType:
+                    type: "Array"
+                    dataType:
+                      type: "Struct"
+                      fields:
+                      - name: "status"
+                        dataType:
+                          type: "String"
+                        description: "Current status of each sub-task within team\
+                          \ tasks"
+                      - name: "sub_task_name"
+                        dataType:
+                          type: "String"
+                        description: "Name of the sub-task within a team task"
+                  description: "List of sub-tasks associated with team tasks"
+                - name: "task_name"
+                  dataType:
+                    type: "String"
+                  description: "Name of the main task assigned to the team"
+            description: "Tasks assigned to the team members"
+          - name: "team_name"
+            dataType:
+              type: "String"
+            description: "Name of the team associated with the projects"

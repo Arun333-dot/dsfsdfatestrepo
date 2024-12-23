@@ -1,0 +1,15 @@
+---
+version: 2
+models:
+- name: "frgthyjuikol"
+  columns:
+  - name: "note"
+    dataType:
+      type: "String"
+  - name: "name"
+    dataType:
+      type: "String"
+  - name: "sub_task_name"
+    dataType:
+      type: "String"
+  tests: []

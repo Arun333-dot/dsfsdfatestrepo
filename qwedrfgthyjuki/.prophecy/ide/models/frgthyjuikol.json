@@ -1,0 +1,118 @@
+{
+  "id" : "frgthyjuikol",
+  "metainfo" : {
+    "label" : "frgthyjuikol",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "frgthyjuikol##N8YGqYBg" : {
+      "id" : "frgthyjuikol##N8YGqYBg",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "frgthyjuikol",
+        "x" : 100,
+        "y" : -340,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Reformat_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "phvi9Ly0",
+          "slug" : "Reformat_1"
+        } ],
+        "outputs" : [ {
+          "id" : "uVR3Svao",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "7BwfgZrPwcW4l_ZF12p_R" : {
+      "id" : "7BwfgZrPwcW4l_ZF12p_R",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "deeply_nested_json",
+        "slug" : "deeply_nested_json",
+        "x" : -860,
+        "y" : 100,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "deeply_nested_json",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VWuc1ublmltL2xRza1drM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg" : {
+      "id" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -600,
+        "y" : -140,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Y9W708RoZJg_yaGMm9A6F$$GXgZlZLm9kjMqUhfjz7jM",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "4WObiWnstUhKsAfAWwuNN$$hxNkEt5xGQL6eW28tgefZ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "fWlKrlgjivtvv__UHd1Ax",
+    "source" : "7BwfgZrPwcW4l_ZF12p_R",
+    "sourcePort" : "VWuc1ublmltL2xRza1drM",
+    "target" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
+    "targetPort" : "Y9W708RoZJg_yaGMm9A6F$$GXgZlZLm9kjMqUhfjz7jM"
+  }, {
+    "id" : "mnuAjhdDtJb7sXEC_KDM-",
+    "source" : "N3qVO_IKXeYNYDuhCaToc$$26Y3rxfypql3DQZBMhqmg",
+    "sourcePort" : "4WObiWnstUhKsAfAWwuNN$$hxNkEt5xGQL6eW28tgefZ",
+    "target" : "frgthyjuikol##N8YGqYBg",
+    "targetPort" : "phvi9Ly0"
+  } ],
+  "component" : "Model"
+}
