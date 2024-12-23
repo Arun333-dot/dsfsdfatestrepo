@@ -1,0 +1,702 @@
+name: HelloWorld_SQL
+description: ''
+version: v566
+author: null
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/kjnbhgvbc:
+    name: kjnbhgvbc
+    description: ''
+    fabricUID: 7
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-22 18:51:12'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-08-05 08:34:32'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/stg_orders:
+    name: stg_orders
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/staging/stg_orders.sql
+    - .prophecy/ide/models/stg_orders.json
+    - models/staging/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlmodels/flattenschema:
+    name: flattenschema
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: projects_nested_array
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/flattenschema.sql
+    - .prophecy/ide/models/flattenschema.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-12-20 07:39:17'
+  .prophecy/metadata/sqlmodels/orders:
+    name: orders
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+      - name: credit_card_amount
+        dataType:
+          type: Double
+      - name: coupon_amount
+        dataType:
+          type: Double
+      - name: bank_transfer_amount
+        dataType:
+          type: Double
+      - name: gift_card_amount
+        dataType:
+          type: Double
+      - name: amount
+        dataType:
+          type: Double
+    description: This table has basic information about orders, as well as some derived
+      facts based on payments
+    author: kiranadmin@prophecy.io
+    files:
+    - models/orders.sql
+    - .prophecy/ide/models/orders.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlmodels/temp:
+    name: temp
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/temp.sql
+    - .prophecy/ide/models/temp.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-11-06 05:58:06'
+  .prophecy/metadata/sqlmodels/stg_payments:
+    name: stg_payments
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: payment_id
+        dataType:
+          type: Integer
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Double
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/staging/stg_payments.sql
+    - .prophecy/ide/models/stg_payments.json
+    - models/staging/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlmodels/stg_customers:
+    name: stg_customers
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/staging/stg_customers.sql
+    - .prophecy/ide/models/stg_customers.json
+    - models/staging/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-08-05 08:36:43'
+sqlSnapshots:
+  .prophecy/metadata/sqlsnapshots/customers:
+    name: customers
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: first_order
+        dataType:
+          type: Date
+      - name: most_recent_order
+        dataType:
+          type: Date
+      - name: number_of_orders
+        dataType:
+          type: Bigint
+      - name: customer_lifetime_value
+        dataType:
+          type: Double
+      - name: dbt_scd_id
+        dataType:
+          type: String
+      - name: dbt_updated_at
+        dataType:
+          type: String
+      - name: dbt_valid_from
+        dataType:
+          type: String
+      - name: dbt_valid_to
+        dataType:
+          type: String
+    description: This table has basic information about a customer, as well as some
+      derived facts based on a customer's orders
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - snapshots/customers.sql
+    - .prophecy/ide/snapshots/customers.json
+    - snapshots/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-25 10:51:58'
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-08-05 08:39:54'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/raw_customers:
+    name: raw_customers
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - seeds/raw_customers.csv
+    createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlseeds/raw_orders:
+    name: raw_orders
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: user_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - seeds/raw_orders.csv
+    createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlseeds/raw_payments:
+    name: raw_payments
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Integer
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - seeds/raw_payments.csv
+    createdAt: '2024-08-05 08:36:43'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_aditya:
+    name: hive_metastore.aditya
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-11-17 11:05:41'
+    tables:
+    - name: raw_data
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Bigint
+        - name: value
+          dataType:
+            type: Bigint
+      description: Raw data capturing values and associated identifiers, serving as
+        a foundational dataset for further analysis.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-11-17 11:05:41'
+  .prophecy/metadata/sqlsources/hive_metastore_rohit:
+    name: hive_metastore.rohit
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-11-17 11:05:49'
+    tables:
+    - name: raw_orders
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Bigint
+        - name: user_id
+          dataType:
+            type: Bigint
+        - name: order_date
+          dataType:
+            type: Date
+        - name: status
+          dataType:
+            type: String
+      description: Order records capturing user transactions and their statuses over
+        time.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-11-17 11:05:49'
+    - name: raw_customers
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: id
+          dataType:
+            type: Bigint
+        - name: first_name
+          dataType:
+            type: String
+        - name: last_name
+          dataType:
+            type: String
+      description: Customer information including names and identifiers, essential
+        for managing customer relationships.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-11-17 11:05:57'
+    - name: databricks123
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: duration
+                dataType:
+                  type: Bigint
+                description: Duration of the project in months
+              - name: name
+                dataType:
+                  type: String
+                description: Name of the project associated with the employee
+              - name: technologies
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: Technologies used in the projects undertaken by the individual
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee profiles encompassing experience, salary, projects, and
+        personal interests, aiding in workforce analysis and resource allocation.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-20 06:41:51'
+    - name: databricks_flatten_jsonarray
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: duration
+                dataType:
+                  type: Bigint
+                description: Duration of the project in months
+              - name: name
+                dataType:
+                  type: String
+                description: Name of the project associated with the individual
+              - name: technologies
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: List of technologies used in the projects
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee profiles encompassing experience, salary, projects, and
+        personal interests, aiding in workforce analysis and resource allocation.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-20 09:10:07'
+    - name: databricks_null
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: duration
+                dataType:
+                  type: Bigint
+                description: Duration of the project in months
+              - name: name
+                dataType:
+                  type: String
+                description: Name of the project associated with the employee
+              - name: technologies
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: Technologies used in the projects undertaken by the individual
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee profiles detailing experience, salary, projects, and personal
+        interests, aiding in workforce analysis and resource allocation.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-20 10:12:22'
+    - name: databricks_large
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: nested_array
+          dataType:
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: String
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee data encompassing experience, salary, age, and personal
+        interests, aiding in workforce analysis and departmental insights.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-20 11:44:58'
+    - name: nested_arraysjosn
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: duration
+                dataType:
+                  type: Bigint
+                description: Duration of the project in months
+              - name: name
+                dataType:
+                  type: String
+                description: Name of the project associated with the employee
+              - name: nested_array
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: List of additional items or components related to each
+                  project.
+              - name: technologies
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: Technologies used in the projects undertaken by the individual
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee profiles encompassing experience, salary, projects, and
+        personal interests, aiding in workforce analysis and resource allocation.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-20 11:59:24'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: kiranadmin@prophecy.io
+  createdAt: '2024-08-05 08:34:32'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

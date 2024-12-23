@@ -1,0 +1,73 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "7",
+    "jobId" : "jobs/kjnbhgvbc",
+    "name" : "kjnbhgvbc",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "ayGJnFlLJK6BIpma55l-J$$wDASOZ1P9KrmN0GniD-fY" : {
+      "id" : "ayGJnFlLJK6BIpma55l-J$$wDASOZ1P9KrmN0GniD-fY",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -560,
+        "y" : -260
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WZ3eUNgxh8BhoM4_GdlIA$$Gthh5Jn_iEw1tY7821Flu",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "HEMuVBpHrLg4QKNzVlBUA$$il6Zttzcw7SULUGZi4ARo",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print(\"arun sharma\")"
+      }
+    }
+  },
+  "connections" : [ ]
+}
