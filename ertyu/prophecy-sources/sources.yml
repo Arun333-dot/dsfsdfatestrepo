@@ -1,0 +1,19 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.rohit"
+  database: "hive_metastore"
+  schema: "rohit"
+  config:
+    enabled: true
+  tables:
+  - name: "databricks"
+    description: "No specific data available; the dataset appears to be unstructured\
+      \ or improperly defined."
+    quoting:
+      identifier: true
+    columns:
+    - name: "["
+      description: "Indicates the start of a data structure or array"
+      dataType:
+        type: "String"
