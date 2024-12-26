@@ -1,0 +1,84 @@
+{
+  "id" : "model1",
+  "metainfo" : {
+    "label" : "model1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model1##TjSC0lFj" : {
+      "id" : "model1##TjSC0lFj",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM databricks\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OZ2rwDwW",
+          "slug" : "databricks"
+        } ],
+        "outputs" : [ {
+          "id" : "vAojKsl9",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "UNT6I3pKX1SJG8kWDJNml" : {
+      "id" : "UNT6I3pKX1SJG8kWDJNml",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks",
+        "slug" : "databricks",
+        "x" : -140,
+        "y" : 0,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "C8u1XD8CxJXDrBXCQcuI2",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "8fEsge6cc1y6xVvxHcU3C$$MWHWVpgjg9AAaeUeUuw6v",
+    "source" : "UNT6I3pKX1SJG8kWDJNml",
+    "sourcePort" : "C8u1XD8CxJXDrBXCQcuI2",
+    "target" : "model1##TjSC0lFj",
+    "targetPort" : "OZ2rwDwW"
+  } ],
+  "component" : "Model"
+}
