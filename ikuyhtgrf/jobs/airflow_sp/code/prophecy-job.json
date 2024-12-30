@@ -20,7 +20,7 @@
       "do_xcom_push" : true
     },
     "maxActiveRuns" : 1,
-    "endDate" : "2024-12-27",
+    "endDate" : "2025-01-20",
     "catchup" : false,
     "scheduleTimeZone" : "UTC",
     "dagParams" : {

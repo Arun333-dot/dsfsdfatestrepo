@@ -15,7 +15,7 @@ with DAG(
     schedule_interval = None, 
     default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True, "pool" : "7MBClQP5"}, 
     start_date = pendulum.today('UTC'), 
-    end_date = pendulum.datetime(2024, 12, 27, tz = "UTC"), 
+    end_date = pendulum.datetime(2025, 1, 20, tz = "UTC"), 
     catchup = False, 
     max_active_runs = 1
 ) as dag:
