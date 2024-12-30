@@ -8,7 +8,163 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/databricks_job:
+    name: databricks_job
+    description: ''
+    fabricUID: 4531
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-12-27 05:18:19'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - 18703/.prophecy/metadata/sqlmodels/model1
+    sqlProjects: []
+  jobs/airflow_sp:
+    name: airflow_sp
+    description: ''
+    fabricUID: 4574
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-12-27 07:03:16'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
+    sqlProjects: []
+  jobs/airflow_witohut_sp:
+    name: airflow_witohut_sp
+    description: ''
+    fabricUID: 4574
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-12-27 09:32:39'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
+    sqlProjects: []
+  jobs/non-pm-airflow:
+    name: non-pm-airflow
+    description: ''
+    fabricUID: 24
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-27 09:37:11'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
+    sqlProjects: []
+  jobs/non-pm-without-sp:
+    name: non-pm-without-sp
+    description: ''
+    fabricUID: 24
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-27 09:38:11'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
+    sqlProjects: []
+  jobs/databricks_job_without_sp:
+    name: databricks_job_without_sp
+    description: ''
+    fabricUID: 4534
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-27 11:22:10'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - 18703/.prophecy/metadata/sqlmodels/model1
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -71,10 +227,7 @@ sqlSources:
       schema:
         entityType: ''
         providerType: databricks
-        fields:
-        - name: '['
-          dataType:
-            type: String
+        fields: []
       description: No specific data available; the dataset appears to be unstructured
         or improperly defined.
       author: arunsharma+admin3@prophecy.io
