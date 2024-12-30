@@ -6,7 +6,7 @@
     "name" : "airflow_witohut_sp",
     "dagName" : "2K6socvPPrZO1ACwWr_VCg_",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

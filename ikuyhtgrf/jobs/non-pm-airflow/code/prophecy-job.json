@@ -6,7 +6,7 @@
     "name" : "non-pm-airflow",
     "dagName" : "staging_arunsharma_admin3_sql_project_non_pm_airflow",
     "schedule" : "None",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,

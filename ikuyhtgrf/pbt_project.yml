@@ -55,7 +55,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-12-27 07:03:16'
     author: arunsharma+admin3@prophecy.io
     models:
@@ -81,7 +81,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-12-27 09:32:39'
     author: arunsharma+admin3@prophecy.io
     models:
@@ -105,9 +105,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-12-27 09:37:11'
     author: arunsharma+admin3@prophecy.io
     models:
@@ -131,9 +131,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: true
     createdAt: '2024-12-27 09:38:11'
     author: arunsharma+admin3@prophecy.io
     models:
