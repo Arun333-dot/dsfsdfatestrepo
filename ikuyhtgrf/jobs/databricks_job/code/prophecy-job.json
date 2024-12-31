@@ -69,7 +69,7 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
-        "model" : "",
+        "model" : "18703/.prophecy/metadata/sqlmodels/model1",
         "customVersion" : true,
         "projectId" : "18703",
         "runOnlyModel" : "true",
