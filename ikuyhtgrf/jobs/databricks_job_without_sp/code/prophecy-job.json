@@ -1,7 +1,7 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "4534",
+    "fabricId" : "4573",
     "jobId" : "jobs/databricks_job_without_sp",
     "name" : "databricks_job_without_sp",
     "schedule" : "None",
@@ -10,7 +10,7 @@
       "clusterMode" : "Single"
     },
     "enabled" : false,
-    "defaultClusterSize" : "small",
+    "defaultClusterSize" : "prophecy_internal_jobs",
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -77,7 +77,7 @@
         "entityName" : null,
         "gitEntityValueTag" : null,
         "profile" : "run_profile",
-        "sqlFabricId" : "4534",
+        "sqlFabricId" : "4573",
         "gitEntityValue" : "sdfvgb",
         "execDeps" : false,
         "gitEntityValueCommit" : null,

@@ -12,11 +12,11 @@ jobs:
   jobs/databricks_job:
     name: databricks_job
     description: ''
-    fabricUID: 4531
+    fabricUID: 4570
     scheduler:
       Databricks: {}
     cloudProvider: null
-    jobSize: prophecy_internal_jobs
+    jobSize: small
     scheduleCron: None
     timeout: null
     alerting:
@@ -33,7 +33,7 @@ jobs:
     createdAt: '2024-12-27 05:18:19'
     author: arunsharma+admin3@prophecy.io
     models:
-    - 18703/.prophecy/metadata/sqlmodels/model1
+    - 13921/.prophecy/metadata/sqlmodels/new_model
     sqlProjects: []
   jobs/airflow_sp:
     name: airflow_sp
@@ -57,32 +57,6 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2024-12-27 07:03:16'
-    author: arunsharma+admin3@prophecy.io
-    models:
-    - model1
-    sqlProjects: []
-  jobs/airflow_witohut_sp:
-    name: airflow_witohut_sp
-    description: ''
-    fabricUID: 4574
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2024-12-27 09:32:39'
     author: arunsharma+admin3@prophecy.io
     models:
     - model1
@@ -142,11 +116,11 @@ jobs:
   jobs/databricks_job_without_sp:
     name: databricks_job_without_sp
     description: ''
-    fabricUID: 4534
+    fabricUID: 4573
     scheduler:
       Databricks: {}
     cloudProvider: null
-    jobSize: null
+    jobSize: prophecy_internal_jobs
     scheduleCron: None
     timeout: null
     alerting:
@@ -159,7 +133,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-12-27 11:22:10'
     author: arunsharma+admin3@prophecy.io
     models:

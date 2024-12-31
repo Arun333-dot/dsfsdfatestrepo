@@ -1,7 +1,7 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "4531",
+    "fabricId" : "4570",
     "jobId" : "jobs/databricks_job",
     "name" : "databricks_job",
     "schedule" : "None",
@@ -10,7 +10,7 @@
       "clusterMode" : "Single"
     },
     "enabled" : false,
-    "defaultClusterSize" : "prophecy_internal_jobs",
+    "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -33,22 +33,22 @@
     }
   },
   "processes" : {
-    "c4KJrImxQaB19Ix1WDoV8$$pFVCMSPEBelzsoLxz5HJ2" : {
-      "id" : "c4KJrImxQaB19Ix1WDoV8$$pFVCMSPEBelzsoLxz5HJ2",
+    "kbD4MgtEuyN8vJhucXfdq$$3wfuDILrI4v9nISrhiLSE" : {
+      "id" : "kbD4MgtEuyN8vJhucXfdq$$3wfuDILrI4v9nISrhiLSE",
       "component" : "Model",
       "metadata" : {
         "label" : "Model_0",
         "slug" : "Model_0",
-        "x" : -1020,
-        "y" : -460
+        "x" : -1160,
+        "y" : -580
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "cRmr3FM-bs_-LNvCb9mfp$$7ldO_85ll20X5CbSJxZjN",
+          "id" : "pKh_1OQOEP6g6dAzAIVW7$$o_L1PbRzsM2HPVuHBsMIt",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "SLKWELRspod7VrHfsq6vc$$mQDkRu0cyyQSmj2gFP2cT",
+          "id" : "gX3AvEpqriVssCrbipXCW$$dPf0Uw9Eg6l6NnX7P7cgD",
           "slug" : ""
         } ]
       },
@@ -69,25 +69,24 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
-        "model" : "18703/.prophecy/metadata/sqlmodels/model1",
-        "customVersion" : true,
-        "projectId" : "18703",
+        "model" : "13921/.prophecy/metadata/sqlmodels/new_model",
+        "projectId" : "13921",
         "runOnlyModel" : "true",
         "loadingModels" : false,
         "entityName" : null,
         "gitEntityValueTag" : null,
         "profile" : "run_profile",
-        "sqlFabricId" : "4531",
-        "gitEntityValue" : "sdfvgb",
+        "sqlFabricId" : "4572",
+        "gitEntityValue" : "dev2",
         "execDeps" : false,
         "gitEntityValueCommit" : null,
-        "gitEntityValueBranch" : "sdfvgb",
+        "gitEntityValueBranch" : "dev2",
         "execTest" : true,
         "currentProjectModels" : [ {
-          "label" : "model1",
-          "value" : "model1",
-          "id" : "18703/.prophecy/metadata/sqlmodels/model1",
-          "name" : "model1"
+          "label" : "new_model",
+          "value" : "new_model",
+          "id" : "13921/.prophecy/metadata/sqlmodels/new_model",
+          "name" : "new_model"
         } ]
       }
     }
