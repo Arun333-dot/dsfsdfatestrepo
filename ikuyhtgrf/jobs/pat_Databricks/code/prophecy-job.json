@@ -1,9 +1,9 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "4573",
-    "jobId" : "jobs/databricks_job_without_sp",
-    "name" : "databricks_job_without_sp",
+    "fabricId" : "4572",
+    "jobId" : "jobs/pat_Databricks",
+    "name" : "pat_Databricks",
     "schedule" : "None",
     "scheduleTimeZone" : "UTC",
     "jobClusterMode" : {
@@ -33,22 +33,22 @@
     }
   },
   "processes" : {
-    "ggq8dXnQNUys_u4tEpRlK" : {
-      "id" : "ggq8dXnQNUys_u4tEpRlK",
+    "82MOjhFVKpOu8ebYQTtPQ$$1GRD6KH26iJa_sogJTbd5" : {
+      "id" : "82MOjhFVKpOu8ebYQTtPQ$$1GRD6KH26iJa_sogJTbd5",
       "component" : "Model",
       "metadata" : {
-        "label" : "Model_0_1",
-        "slug" : "Model_0_1",
-        "x" : -480,
-        "y" : -160
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -560,
+        "y" : -240
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "HjBMLhWeVzyu9_blEKieV",
+          "id" : "QHXxVGU9n1AJ_wNBzbtN5$$iyzYJaGubDEEQC7_AQMXM",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "LpIRnQmKO4gvTphBNR8Mh",
+          "id" : "9p5he0Tz6_XXNJxtIDjU1$$R96d57ODqjbWohVbDFEcD",
           "slug" : ""
         } ]
       },
@@ -69,7 +69,7 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
-        "model" : "",
+        "model" : "18703/.prophecy/metadata/sqlmodels/model1",
         "customVersion" : true,
         "projectId" : "18703",
         "runOnlyModel" : "true",

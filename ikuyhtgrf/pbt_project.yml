@@ -32,8 +32,7 @@ jobs:
     enabled: false
     createdAt: '2024-12-27 05:18:19'
     author: arunsharma+admin3@prophecy.io
-    models:
-    - 13921/.prophecy/metadata/sqlmodels/new_model
+    models: []
     sqlProjects: []
   jobs/airflow_sp:
     name: airflow_sp
@@ -136,8 +135,85 @@ jobs:
     enabled: false
     createdAt: '2024-12-27 11:22:10'
     author: arunsharma+admin3@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/pat_Databricks:
+    name: pat_Databricks
+    description: ''
+    fabricUID: 4572
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-31 13:17:45'
+    author: arunsharma+admin3@prophecy.io
     models:
     - 18703/.prophecy/metadata/sqlmodels/model1
+    sqlProjects: []
+  jobs/pat_job_airflow_pm:
+    name: pat_job_airflow_pm
+    description: ''
+    fabricUID: 4574
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-31 13:18:38'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
+    sqlProjects: []
+  jobs/pat_job_airflow_nonpm:
+    name: pat_job_airflow_nonpm
+    description: ''
+    fabricUID: 24
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-31 13:28:08'
+    author: arunsharma+admin3@prophecy.io
+    models:
+    - model1
     sqlProjects: []
 gemContainer:
   languageVersion: ''

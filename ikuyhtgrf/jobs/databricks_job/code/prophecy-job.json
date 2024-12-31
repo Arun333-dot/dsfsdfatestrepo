@@ -33,22 +33,22 @@
     }
   },
   "processes" : {
-    "kbD4MgtEuyN8vJhucXfdq$$3wfuDILrI4v9nISrhiLSE" : {
-      "id" : "kbD4MgtEuyN8vJhucXfdq$$3wfuDILrI4v9nISrhiLSE",
+    "xlIU2J_COEhwWk4r--XO4" : {
+      "id" : "xlIU2J_COEhwWk4r--XO4",
       "component" : "Model",
       "metadata" : {
-        "label" : "Model_0",
-        "slug" : "Model_0",
-        "x" : -1160,
-        "y" : -580
+        "label" : "Model_0_1",
+        "slug" : "Model_0_1",
+        "x" : -880,
+        "y" : -420
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "pKh_1OQOEP6g6dAzAIVW7$$o_L1PbRzsM2HPVuHBsMIt",
+          "id" : "Mqzrx55Jlrg3X6zbCbbS5",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "gX3AvEpqriVssCrbipXCW$$dPf0Uw9Eg6l6NnX7P7cgD",
+          "id" : "8l5p2POOImkRW4iO0IDsd",
           "slug" : ""
         } ]
       },
@@ -69,24 +69,25 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
-        "model" : "13921/.prophecy/metadata/sqlmodels/new_model",
-        "projectId" : "13921",
+        "model" : "",
+        "customVersion" : true,
+        "projectId" : "18703",
         "runOnlyModel" : "true",
         "loadingModels" : false,
         "entityName" : null,
         "gitEntityValueTag" : null,
         "profile" : "run_profile",
         "sqlFabricId" : "4572",
-        "gitEntityValue" : "dev2",
+        "gitEntityValue" : "sdfvgb",
         "execDeps" : false,
         "gitEntityValueCommit" : null,
-        "gitEntityValueBranch" : "dev2",
+        "gitEntityValueBranch" : "sdfvgb",
         "execTest" : true,
         "currentProjectModels" : [ {
-          "label" : "new_model",
-          "value" : "new_model",
-          "id" : "13921/.prophecy/metadata/sqlmodels/new_model",
-          "name" : "new_model"
+          "label" : "model1",
+          "value" : "model1",
+          "id" : "18703/.prophecy/metadata/sqlmodels/model1",
+          "name" : "model1"
         } ]
       }
     }
