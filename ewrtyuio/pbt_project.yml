@@ -8,7 +8,33 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/dfhgtjyuk:
+    name: dfhgtjyuk
+    description: ''
+    fabricUID: 2818
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-01-03 05:02:40'
+    author: arunsharma@prophecy.io
+    models:
+    - 18298/.prophecy/metadata/sqlmodels/newmodelflatten
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
