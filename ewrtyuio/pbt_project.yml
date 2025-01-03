@@ -1,6 +1,6 @@
 name: HelloWorld_SQL
 description: ''
-version: v3.3
+version: v1
 author: null
 language: sql
 buildSystem: ''
