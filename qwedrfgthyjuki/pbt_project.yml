@@ -1,0 +1,280 @@
+name: sql_project_testing
+description: ''
+version: werfgthyju
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-12-23 11:10:51'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/frgthyjuikol:
+    name: frgthyjuikol
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: role
+        dataType:
+          type: String
+      - name: status
+        dataType:
+          type: String
+      - name: note
+        dataType:
+          type: String
+      - name: id
+        dataType:
+          type: Bigint
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/frgthyjuikol.sql
+    - .prophecy/ide/models/frgthyjuikol.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-12-23 11:11:25'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-12-23 11:11:01'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_rohit:
+    name: hive_metastore.rohit
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-12-23 11:32:59'
+    tables:
+    - name: deeply_nested_json
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: deadline
+                dataType:
+                  type: Timestamp
+                description: The deadline for the project
+              - name: project_name
+                dataType:
+                  type: String
+                description: The name of the project
+              - name: tasks
+                dataType:
+                  type: Array
+                  dataType:
+                    type: Struct
+                    fields:
+                    - name: assigned_to
+                      dataType:
+                        type: String
+                      description: Names of individuals assigned to each task
+                    - name: sub_tasks
+                      dataType:
+                        type: Array
+                        dataType:
+                          type: Struct
+                          fields:
+                          - name: notes
+                            dataType:
+                              type: Array
+                              dataType:
+                                type: Struct
+                                fields:
+                                - name: note
+                                  dataType:
+                                    type: String
+                                  description: Notes associated with a specific sub-task
+                            description: Notes related to each sub-task for additional
+                              context
+                          - name: status
+                            dataType:
+                              type: String
+                            description: Current status of the sub-task
+                          - name: sub_task_name
+                            dataType:
+                              type: String
+                            description: Name of the sub-task within a project task
+                      description: List of sub-tasks associated with each task in
+                        the project
+                    - name: task_name
+                      dataType:
+                        type: String
+                      description: Name of the main task within a project
+                description: List of tasks associated with each project
+        - name: salary
+          dataType:
+            type: Bigint
+        - name: tags
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: team
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: members
+                dataType:
+                  type: Array
+                  dataType:
+                    type: Struct
+                    fields:
+                    - name: name
+                      dataType:
+                        type: String
+                      description: Name of the team member
+                    - name: role
+                      dataType:
+                        type: String
+                      description: Role of the team member within the project
+                description: Members belonging to each team, including their names
+                  and roles
+              - name: tasks
+                dataType:
+                  type: Array
+                  dataType:
+                    type: Struct
+                    fields:
+                    - name: assigned_to
+                      dataType:
+                        type: Array
+                        dataType:
+                          type: String
+                      description: Individuals assigned to specific tasks within the
+                        team
+                    - name: sub_tasks
+                      dataType:
+                        type: Array
+                        dataType:
+                          type: Struct
+                          fields:
+                          - name: status
+                            dataType:
+                              type: String
+                            description: Current status of each sub-task within team
+                              tasks
+                          - name: sub_task_name
+                            dataType:
+                              type: String
+                            description: Name of the sub-task within a team task
+                      description: List of sub-tasks associated with team tasks
+                    - name: task_name
+                      dataType:
+                        type: String
+                      description: Name of the main task assigned to the team
+                description: Tasks assigned to the team members
+              - name: team_name
+                dataType:
+                  type: String
+                description: Name of the team associated with the projects
+      description: Comprehensive employee project and task management data, capturing
+        details on assignments, deadlines, and team structures.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-23 11:32:59'
+  .prophecy/metadata/sqlsources/qa_performance_arun_test:
+    name: qa_performance.arun_test
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-12-23 11:32:21'
+    tables:
+    - name: databricks_large
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: nested_array
+          dataType:
+            type: Array
+            dataType:
+              type: Array
+              dataType:
+                type: String
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee data encompassing personal details, salary, department,
+        and experience, aiding in workforce analysis and planning.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-12-23 11:32:21'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2024-12-23 11:10:51'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

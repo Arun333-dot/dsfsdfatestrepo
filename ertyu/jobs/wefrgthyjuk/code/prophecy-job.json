@@ -1,0 +1,137 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4485",
+    "jobId" : "jobs/wefrgthyjuk",
+    "name" : "wefrgthyjuk",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "CJY1fDm_Zgh7z3K2WY5m6$$fNsXq1mfoxpOrYMY1HCQk" : {
+      "id" : "CJY1fDm_Zgh7z3K2WY5m6$$fNsXq1mfoxpOrYMY1HCQk",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -340,
+        "y" : -200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kV5MHvMr7Qmyy5NF_kTH9$$Vf0fDDqExRTMdSBwmfR44",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "IPZ4th1S2Q8VqZcfrar4_$$IcjksZhQifdSCTyXMLMHu",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "model" : "18651/.prophecy/metadata/sqlmodels/tyuiukjyhtrgeff",
+        "customVersion" : true,
+        "projectId" : "18651",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "4485",
+        "gitEntityValue" : "dev",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "dev",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "tyuiukjyhtrgeff",
+          "value" : "tyuiukjyhtrgeff",
+          "id" : "18651/.prophecy/metadata/sqlmodels/tyuiukjyhtrgeff",
+          "name" : "tyuiukjyhtrgeff"
+        } ]
+      }
+    },
+    "bR6hsBIxsIr_CBkDXmRIW$$qVmx6-Df-i3Kl3xEGBpW2" : {
+      "id" : "bR6hsBIxsIr_CBkDXmRIW$$qVmx6-Df-i3Kl3xEGBpW2",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -200,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Yf-CPoeFvlu4_SzBwrxao$$dyJyHZ8LFqLsv7jnBKVDY",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "D9HUwy8Niehi9XBR3y8SE$$6sZVVAwriRp47KGPNy-5L",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print(\"arun sharma\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "46_0bdDV45EgiyZROT75r$$u3Mf9wlfIAiCmxeicZpY2",
+    "source" : "CJY1fDm_Zgh7z3K2WY5m6$$fNsXq1mfoxpOrYMY1HCQk",
+    "target" : "bR6hsBIxsIr_CBkDXmRIW$$qVmx6-Df-i3Kl3xEGBpW2",
+    "sourcePort" : "IPZ4th1S2Q8VqZcfrar4_$$IcjksZhQifdSCTyXMLMHu",
+    "targetPort" : "Yf-CPoeFvlu4_SzBwrxao$$dyJyHZ8LFqLsv7jnBKVDY"
+  } ]
+}

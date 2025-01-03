@@ -1,0 +1,128 @@
+{
+  "id" : "temp",
+  "metainfo" : {
+    "label" : "temp",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "temp##RGPhYwCN" : {
+      "id" : "temp##RGPhYwCN",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "temp",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Reformat_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "z3YpMg8m",
+          "slug" : "Reformat_1"
+        } ],
+        "outputs" : [ {
+          "id" : "lY06jJpx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "CUQHClB9CIbXWIIJNitj1" : {
+      "id" : "CUQHClB9CIbXWIIJNitj1",
+      "component" : "Snapshot",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -720,
+        "y" : 40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Snapshot",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VE_4wsPhsF1ac2t6hqTKK",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "fu6T2r1kTnA22lXSGizen$$hWHBPOT2csTU9yqU8ldDD" : {
+      "id" : "fu6T2r1kTnA22lXSGizen$$hWHBPOT2csTU9yqU8ldDD",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -520,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Simplifies customer data by focusing on essential identifiers and names.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "Ydwd8doE3J3c3pHyhQT94$$wpDd-7k3K6PiDx5OY9MaQ##customer_id", "Ydwd8doE3J3c3pHyhQT94$$wpDd-7k3K6PiDx5OY9MaQ##first_name" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "customer_id"
+          },
+          "alias" : "customer_id"
+        }, {
+          "expression" : {
+            "expression" : "first_name"
+          },
+          "alias" : "first_name"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Ydwd8doE3J3c3pHyhQT94$$wpDd-7k3K6PiDx5OY9MaQ",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "xmv3I2vVk-i7GSXqcgi9x$$wdNIXYAxbMJxGKimP6o4C",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "JQOxbq5_w_uR9HE9OxWce$$FymJ71KvTTAO6Yo-dCg29",
+    "source" : "CUQHClB9CIbXWIIJNitj1",
+    "sourcePort" : "VE_4wsPhsF1ac2t6hqTKK",
+    "target" : "fu6T2r1kTnA22lXSGizen$$hWHBPOT2csTU9yqU8ldDD",
+    "targetPort" : "Ydwd8doE3J3c3pHyhQT94$$wpDd-7k3K6PiDx5OY9MaQ"
+  }, {
+    "id" : "3tqC_84m2wA617LtlzYoZ",
+    "source" : "fu6T2r1kTnA22lXSGizen$$hWHBPOT2csTU9yqU8ldDD",
+    "sourcePort" : "xmv3I2vVk-i7GSXqcgi9x$$wdNIXYAxbMJxGKimP6o4C",
+    "target" : "temp##RGPhYwCN",
+    "targetPort" : "z3YpMg8m"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,118 @@
+name: sql_project_123
+description: ''
+version: 0.0.1
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/wefrgthyjuk:
+    name: wefrgthyjuk
+    description: ''
+    fabricUID: 4485
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-12-26 10:03:02'
+    author: arunsharma+admin@prophecy.io
+    models:
+    - 18651/.prophecy/metadata/sqlmodels/tyuiukjyhtrgeff
+    sqlProjects: []
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-12-26 10:00:58'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/tyuiukjyhtrgeff:
+    name: tyuiukjyhtrgeff
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: '['
+        dataType:
+          type: String
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/tyuiukjyhtrgeff.sql
+    - .prophecy/ide/models/tyuiukjyhtrgeff.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-12-26 10:01:32'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-12-26 10:01:08'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_rohit:
+    name: hive_metastore.rohit
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-12-26 10:01:46'
+    tables:
+    - name: databricks
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: '['
+          dataType:
+            type: String
+      description: No specific data available; the dataset appears to be unstructured
+        or improperly defined.
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2024-12-26 10:01:46'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2024-12-26 10:00:58'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
