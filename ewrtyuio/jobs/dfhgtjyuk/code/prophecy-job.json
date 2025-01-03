@@ -69,7 +69,7 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
-        "model" : "18298/.prophecy/metadata/sqlmodels/newmodelflatten",
+        "model" : "18298/.prophecy/metadata/sqlmodels/flatten",
         "customVersion" : true,
         "projectId" : "18298",
         "runOnlyModel" : "true",

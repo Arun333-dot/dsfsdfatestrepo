@@ -33,6 +33,7 @@ jobs:
     createdAt: '2025-01-03 05:02:40'
     author: arunsharma@prophecy.io
     models:
+    - 18298/.prophecy/metadata/sqlmodels/flatten
     - 18298/.prophecy/metadata/sqlmodels/newmodelflatten
     sqlProjects: []
 gemContainer:
