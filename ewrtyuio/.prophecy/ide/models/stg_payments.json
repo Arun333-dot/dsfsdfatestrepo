@@ -35,31 +35,6 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "k0WE01K4",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -101,60 +76,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "I4z62jzh",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            } ]
-          },
           "slug" : "source"
         } ],
         "outputs" : [ {
           "id" : "dvNxlrgk",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "payment_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -184,60 +109,10 @@
       "ports" : {
         "inputs" : [ {
           "id" : "dtYTHFhD",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "payment_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
           "slug" : "renamed"
         } ],
         "outputs" : [ {
           "id" : "wR47vX6j",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "payment_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Float"
-              }
-            } ]
-          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,

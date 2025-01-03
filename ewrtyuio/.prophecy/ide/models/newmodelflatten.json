@@ -1,0 +1,82 @@
+{
+  "id" : "newmodelflatten",
+  "metainfo" : {
+    "label" : "newmodelflatten",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "newmodelflatten##kTkkRoTH" : {
+      "id" : "newmodelflatten##kTkkRoTH",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "newmodelflatten",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM flatten\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VYmVm4Qz",
+          "slug" : "flatten"
+        } ],
+        "outputs" : [ {
+          "id" : "byFPaLma",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "-dXubnQumCG1b6mYtprtb" : {
+      "id" : "-dXubnQumCG1b6mYtprtb",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "flatten",
+        "slug" : "flatten",
+        "x" : -1060,
+        "y" : 60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "flatten",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "pHfEduKBOcVNeCY9RSd6o",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "vuKl_F38Qq1kC9oxQOlft$$w6nVXCGIjK6zQivbIRpKQ",
+    "source" : "-dXubnQumCG1b6mYtprtb",
+    "sourcePort" : "pHfEduKBOcVNeCY9RSd6o",
+    "target" : "newmodelflatten##kTkkRoTH",
+    "targetPort" : "VYmVm4Qz"
+  } ],
+  "component" : "Model"
+}

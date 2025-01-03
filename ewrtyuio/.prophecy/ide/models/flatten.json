@@ -1,0 +1,141 @@
+{
+  "id" : "flatten",
+  "metainfo" : {
+    "label" : "flatten",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "flatten##lUwkr4AU" : {
+      "id" : "flatten##lUwkr4AU",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "flatten",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM FlattenSchema_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OUlp41Cr",
+          "slug" : "FlattenSchema_1"
+        } ],
+        "outputs" : [ {
+          "id" : "fYXNyraJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "5yeAcCEBmxkRjCOZmu9s-" : {
+      "id" : "5yeAcCEBmxkRjCOZmu9s-",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "databricks_nested",
+        "slug" : "databricks_nested",
+        "x" : -900,
+        "y" : -20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "databricks_nested",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.rohit",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "t-11JjeXQfp89jW2rH8Kf",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "x9esqQuYWMr0cjsbtWHRk$$jS4Bip7BRzsg7zkhVe_IM" : {
+      "id" : "x9esqQuYWMr0cjsbtWHRk$$jS4Bip7BRzsg7zkhVe_IM",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : -460,
+        "y" : -100,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Simplifies project data by extracting project names and associated technologies.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ "1-UoyPDN35AUuKnXe02Et$$u-VCSyyVFjyWCrE2EGjmu##projects" ],
+        "flattenExpressions" : [ {
+          "expression" : {
+            "expression" : "projects"
+          },
+          "alias" : "projects"
+        }, {
+          "expression" : {
+            "expression" : "projects.col.technologies"
+          },
+          "alias" : "technologies"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "projects.col.name"
+          },
+          "alias" : "name"
+        }, {
+          "expression" : {
+            "expression" : "technologies.col"
+          },
+          "alias" : "technologies"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1-UoyPDN35AUuKnXe02Et$$u-VCSyyVFjyWCrE2EGjmu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "wKs58mqUipNbDgE1pGq7w$$k3pVBc8VJ6q7HxX8FgG6k",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Wp9LXAmJ0Jky4kIJR7TGu$$eode0LSaopAEJ6cXILD-E",
+    "source" : "5yeAcCEBmxkRjCOZmu9s-",
+    "sourcePort" : "t-11JjeXQfp89jW2rH8Kf",
+    "target" : "x9esqQuYWMr0cjsbtWHRk$$jS4Bip7BRzsg7zkhVe_IM",
+    "targetPort" : "1-UoyPDN35AUuKnXe02Et$$u-VCSyyVFjyWCrE2EGjmu"
+  }, {
+    "id" : "pRFxI0liKvc2g3kHTRyFY",
+    "source" : "x9esqQuYWMr0cjsbtWHRk$$jS4Bip7BRzsg7zkhVe_IM",
+    "sourcePort" : "wKs58mqUipNbDgE1pGq7w$$k3pVBc8VJ6q7HxX8FgG6k",
+    "target" : "flatten##lUwkr4AU",
+    "targetPort" : "OUlp41Cr"
+  } ],
+  "component" : "Model"
+}

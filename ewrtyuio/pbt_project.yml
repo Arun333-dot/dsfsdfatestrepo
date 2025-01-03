@@ -55,53 +55,30 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-08-05 08:36:43'
-  .prophecy/metadata/sqlmodels/orders:
-    name: orders
+  .prophecy/metadata/sqlmodels/newmodelflatten:
+    name: newmodelflatten
     schema:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: order_id
-        dataType:
-          type: Integer
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: order_date
-        dataType:
-          type: Date
-      - name: status
+      - name: name
         dataType:
           type: String
-      - name: credit_card_amount
+      - name: technologies
         dataType:
-          type: Float
-      - name: coupon_amount
-        dataType:
-          type: Float
-      - name: bank_transfer_amount
-        dataType:
-          type: Float
-      - name: gift_card_amount
-        dataType:
-          type: Float
-      - name: amount
-        dataType:
-          type: Float
-    description: This table has basic information about orders, as well as some derived
-      facts based on payments
-    author: kiranadmin@prophecy.io
+          type: String
+    description: null
+    author: arunsharma@prophecy.io
     files:
-    - models/orders.sql
-    - .prophecy/ide/models/orders.json
-    - models/schema.yml
+    - models/newmodelflatten.sql
+    - .prophecy/ide/models/newmodelflatten.json
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2024-08-05 08:36:43'
+    createdAt: '2025-01-03 04:53:50'
   .prophecy/metadata/sqlmodels/customers:
     name: customers
     schema:
@@ -128,7 +105,7 @@ sqlModels:
           type: Bigint
       - name: customer_lifetime_value
         dataType:
-          type: Float
+          type: Double
     description: This table has basic information about a customer, as well as some
       derived facts based on a customer's orders
     author: kiranadmin@prophecy.io
@@ -160,7 +137,7 @@ sqlModels:
           type: String
       - name: amount
         dataType:
-          type: Float
+          type: Double
     description: null
     author: kiranadmin@prophecy.io
     files:
@@ -174,6 +151,30 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-08-05 08:36:43'
+  .prophecy/metadata/sqlmodels/flatten:
+    name: flatten
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: name
+        dataType:
+          type: String
+      - name: technologies
+        dataType:
+          type: String
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/flatten.sql
+    - .prophecy/ide/models/flatten.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-01-03 04:51:47'
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
     schema:
@@ -281,7 +282,67 @@ sqlSeeds:
     files:
     - seeds/raw_payments.csv
     createdAt: '2024-08-05 08:36:43'
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_rohit:
+    name: hive_metastore.rohit
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-01-03 04:52:24'
+    tables:
+    - name: databricks_nested
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: age
+          dataType:
+            type: Bigint
+        - name: department
+          dataType:
+            type: String
+        - name: experience_years
+          dataType:
+            type: Bigint
+        - name: hobbies
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: projects
+          dataType:
+            type: Array
+            dataType:
+              type: Struct
+              fields:
+              - name: duration
+                dataType:
+                  type: Bigint
+                description: Duration of the project in months
+              - name: name
+                dataType:
+                  type: String
+                description: Name of the project associated with the employee
+              - name: technologies
+                dataType:
+                  type: Array
+                  dataType:
+                    type: String
+                description: List of technologies used in the projects
+        - name: salary
+          dataType:
+            type: Double
+      description: Employee profiles encompassing personal details, work experience,
+        and project involvement, aiding in workforce analysis and resource allocation.
+      author: arunsharma@prophecy.io
+      createdAt: '2025-01-03 04:52:24'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

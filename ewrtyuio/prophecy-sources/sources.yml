@@ -1,0 +1,67 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.rohit"
+  database: "hive_metastore"
+  schema: "rohit"
+  config:
+    enabled: true
+  tables:
+  - name: "databricks_nested"
+    description: "Employee profiles encompassing personal details, work experience,\
+      \ and project involvement, aiding in workforce analysis and resource allocation."
+    quoting:
+      identifier: true
+    columns:
+    - name: "age"
+      description: "The age of the employee"
+      dataType:
+        type: "Bigint"
+    - name: "department"
+      description: "The department where the employee works"
+      dataType:
+        type: "String"
+    - name: "experience_years"
+      description: "Number of years of experience the individual has in their field"
+      dataType:
+        type: "Bigint"
+    - name: "hobbies"
+      description: "List of hobbies associated with the individual"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "String"
+    - name: "id"
+      description: "Unique identifier for each employee"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      description: "The name of the employee"
+      dataType:
+        type: "String"
+    - name: "projects"
+      description: "List of projects the individual has worked on, including details\
+        \ like duration and technologies used."
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "duration"
+            dataType:
+              type: "Bigint"
+            description: "Duration of the project in months"
+          - name: "name"
+            dataType:
+              type: "String"
+            description: "Name of the project associated with the employee"
+          - name: "technologies"
+            dataType:
+              type: "Array"
+              dataType:
+                type: "String"
+            description: "List of technologies used in the projects"
+    - name: "salary"
+      description: "The annual salary of the employee"
+      dataType:
+        type: "Double"
