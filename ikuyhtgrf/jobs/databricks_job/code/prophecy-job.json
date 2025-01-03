@@ -1,0 +1,96 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4570",
+    "jobId" : "jobs/databricks_job",
+    "name" : "databricks_job",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "xlIU2J_COEhwWk4r--XO4" : {
+      "id" : "xlIU2J_COEhwWk4r--XO4",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0_1",
+        "slug" : "Model_0_1",
+        "x" : -880,
+        "y" : -420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Mqzrx55Jlrg3X6zbCbbS5",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "8l5p2POOImkRW4iO0IDsd",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "model" : "18703/.prophecy/metadata/sqlmodels/model1",
+        "customVersion" : true,
+        "projectId" : "18703",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "4572",
+        "gitEntityValue" : "sdfvgb",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "sdfvgb",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "model1",
+          "value" : "model1",
+          "id" : "18703/.prophecy/metadata/sqlmodels/model1",
+          "name" : "model1"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}
