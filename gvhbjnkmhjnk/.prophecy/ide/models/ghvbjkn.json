@@ -1,0 +1,84 @@
+{
+  "id" : "ghvbjkn",
+  "metainfo" : {
+    "label" : "ghvbjkn",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "ghvbjkn##z6tCoqPj" : {
+      "id" : "ghvbjkn##z6tCoqPj",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "ghvbjkn",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM raw_data\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kUeQRS0w",
+          "slug" : "raw_data"
+        } ],
+        "outputs" : [ {
+          "id" : "rloVc9wx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "J1ApL_lb8HQHpX6qZK0E3" : {
+      "id" : "J1ApL_lb8HQHpX6qZK0E3",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "raw_data",
+        "slug" : "raw_data",
+        "x" : -200,
+        "y" : -40,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "raw_data",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.aditya",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "LSMtNKnxULuXmzzHfnyx1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "gVTrrB8MoBmMfRsbZiChv$$uD8_U9SC-jpE0G0apPCc6",
+    "source" : "J1ApL_lb8HQHpX6qZK0E3",
+    "sourcePort" : "LSMtNKnxULuXmzzHfnyx1",
+    "target" : "ghvbjkn##z6tCoqPj",
+    "targetPort" : "kUeQRS0w"
+  } ],
+  "component" : "Model"
+}

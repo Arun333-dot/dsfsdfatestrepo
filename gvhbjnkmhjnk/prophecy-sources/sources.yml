@@ -1,0 +1,23 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.aditya"
+  database: "hive_metastore"
+  schema: "aditya"
+  config:
+    enabled: true
+  tables:
+  - name: "raw_data"
+    description: "Raw data capturing key metrics, enabling foundational analysis for\
+      \ business insights."
+    quoting:
+      identifier: true
+    columns:
+    - name: "id"
+      description: "Unique identifier for each record in the dataset"
+      dataType:
+        type: "Bigint"
+    - name: "value"
+      description: "The numerical value associated with the record"
+      dataType:
+        type: "Bigint"
