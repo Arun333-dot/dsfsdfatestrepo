@@ -1,0 +1,36 @@
+{
+  "name" : "bg4",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "bigquery",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "prophecy-databricks-qa",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "prophecy-development",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

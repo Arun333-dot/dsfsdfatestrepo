@@ -1,0 +1,12 @@
+---
+version: 2
+models:
+- name: "hjbknl"
+  columns:
+  - name: "name"
+    dataType:
+      type: "String"
+  - name: "age"
+    dataType:
+      type: "Integer"
+  tests: []

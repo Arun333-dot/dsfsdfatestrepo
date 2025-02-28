@@ -1,0 +1,90 @@
+{
+  "id" : "hjbknl",
+  "metainfo" : {
+    "label" : "hjbknl",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "table",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "hjbknl##flEuswmV" : {
+      "id" : "hjbknl##flEuswmV",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "hjbknl",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "comment" : "Extracts data from an unknown source.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM dsfg\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gcJjBLPR",
+          "slug" : "dsfg"
+        } ],
+        "outputs" : [ {
+          "id" : "L5S0etzj",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "AtQQWy6upDqT0WV9f7ZeQ" : {
+      "id" : "AtQQWy6upDqT0WV9f7ZeQ",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "dsfg",
+        "slug" : "dsfg",
+        "x" : -140,
+        "y" : 0,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "dsfg",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "MASOD5O1KE-zqfnFO8Kki",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "iOlQRdrICDTNursV2hdVV$$5jm8yDpdrpXbhVqkHk-uZ",
+    "source" : "AtQQWy6upDqT0WV9f7ZeQ",
+    "sourcePort" : "MASOD5O1KE-zqfnFO8Kki",
+    "target" : "hjbknl##flEuswmV",
+    "targetPort" : "gcJjBLPR"
+  } ],
+  "component" : "Model"
+}
