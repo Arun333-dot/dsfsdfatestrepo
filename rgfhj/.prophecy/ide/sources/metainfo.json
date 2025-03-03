@@ -34,6 +34,25 @@
         "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
         "label" : "OrchestrationSource_0"
       } ]
+    },
+    "ghjghj" : {
+      "id" : "ghjghj",
+      "name" : "ghjghj",
+      "path" : "external_sql_simple_project/.prophecy/ide/pipelines/ghjghj.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1",
+        "label" : "OrchestrationSource_0"
+      } ]
     }
   },
   "dependenciesContainer" : {

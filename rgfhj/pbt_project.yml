@@ -51,6 +51,15 @@ sqlMacros:
     - macros/function1.sql/function1.sql
     - .prophecy/ide/macros/function1.json
     createdAt: '2025-03-03 06:17:25'
+  .prophecy/metadata/sqlmacros/function3:
+    name: function3
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/function3.sql/function3.sql
+    - .prophecy/ide/macros/function3.json
+    createdAt: '2025-03-03 06:22:22'
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name
     macroType: expression
@@ -60,6 +69,17 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-03 06:16:57'
+  .prophecy/metadata/sqlmacros/ghjghj:
+    name: ghjghj
+    macroType: query
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/ghjghj.sql
+    - .prophecy/ide/macros/ghjghj.json
+    - macros/macros.yml
+    - gems/ghjghj.py
+    createdAt: '2025-03-03 06:22:47'
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
@@ -72,6 +92,14 @@ sqlOrchestratorPipelines:
     files:
     - pipelines/pipeline1.json
     createdAt: '2025-03-03 06:21:12'
+  .prophecy/metadata/sqlorchestratorpipeline/ghjghj:
+    name: ghjghj
+    schema: null
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - pipelines/ghjghj.json
+    createdAt: '2025-03-03 06:23:34'
 sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
