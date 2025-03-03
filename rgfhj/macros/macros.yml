@@ -6,3 +6,9 @@ macros:
   - name: "parameter1"
     type: "value"
   macroType: "query"
+- name: "fghm"
+  arguments:
+  - name: "parameter1"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "query"

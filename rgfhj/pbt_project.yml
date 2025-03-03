@@ -40,35 +40,16 @@ sqlModels:
       snapshots: []
     createdAt: '2025-03-03 06:17:06'
 sqlSnapshots: {}
-sqlTests: {}
+sqlTests:
+  .prophecy/metadata/sqltests/gbfgbfgbfgb:
+    name: gbfgbfgbfgb
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - tests/generic/gbfgbfgbfgb.sql/gbfgbfgbfgb.sql
+    testType: GenericDataTest
+    createdAt: '2025-03-03 06:33:58'
 sqlMacros:
-  .prophecy/metadata/sqlmacros/function1:
-    name: function1
-    macroType: expression
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - macros/function1.sql/function1.sql
-    - .prophecy/ide/macros/function1.json
-    createdAt: '2025-03-03 06:17:25'
-  .prophecy/metadata/sqlmacros/function3:
-    name: function3
-    macroType: expression
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - macros/function3.sql/function3.sql
-    - .prophecy/ide/macros/function3.json
-    createdAt: '2025-03-03 06:22:22'
-  .prophecy/metadata/sqlmacros/generate_schema_name:
-    name: generate_schema_name
-    macroType: expression
-    description: null
-    author: arunsharma@prophecy.io
-    files:
-    - macros/generate_schema_name.sql
-    - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-03-03 06:16:57'
   .prophecy/metadata/sqlmacros/ghjghj:
     name: ghjghj
     macroType: query
@@ -80,8 +61,59 @@ sqlMacros:
     - macros/macros.yml
     - gems/ghjghj.py
     createdAt: '2025-03-03 06:22:47'
+  .prophecy/metadata/sqlmacros/function3:
+    name: function3
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/function3.sql/function3.sql
+    - .prophecy/ide/macros/function3.json
+    createdAt: '2025-03-03 06:22:22'
+  .prophecy/metadata/sqlmacros/fghm:
+    name: fghm
+    macroType: query
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/fghm.sql
+    - .prophecy/ide/macros/fghm.json
+    - macros/macros.yml
+    - gems/fghm.py
+    createdAt: '2025-03-03 06:33:08'
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-03 06:16:57'
+  .prophecy/metadata/sqlmacros/function1:
+    name: function1
+    macroType: expression
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - macros/function1.sql/function1.sql
+    - .prophecy/ide/macros/function1.json
+    createdAt: '2025-03-03 06:17:25'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/prophecy__temp_ghjghj_source:
+    name: prophecy__temp_ghjghj_source
+    description: null
+    author: arunsharma@prophecy.io
+    files:
+    - models/ghjghj/schema.yml
+    createdAt: '2025-03-03 06:33:01'
+    tables:
+    - name: prophecy__temp_ghjghj_post_Aggregate_1_0
+      schema: null
+      description: null
+      author: arunsharma@prophecy.io
+      createdAt: '2025-03-03 06:33:01'
 sqlUnreferencedSources: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/pipeline1:

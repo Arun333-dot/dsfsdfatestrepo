@@ -26,8 +26,8 @@
       "kind" : "SFTPSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
-        "x" : 20,
-        "y" : 20,
+        "x" : -480,
+        "y" : -220,
         "phase" : 0
       },
       "properties" : {
@@ -47,6 +47,37 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "d4JeAXHUAC3jAIPQDOwrr$$88dcqijPK4KPYW_ToRaUs",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw" : {
+      "id" : "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "x" : -1140,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eIRPyDx2JJNbTX06Ej5i0$$T5o_2id0xQX2XWHFFTlzV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "fNIeEz6ewC9KRh-y_ADPq$$1dFOcyThWyqosysljF-Jk",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
