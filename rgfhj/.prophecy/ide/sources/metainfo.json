@@ -15,7 +15,27 @@
     "editable" : true
   },
   "datasets" : { },
-  "pipelines" : { },
+  "pipelines" : {
+    "pipeline1" : {
+      "id" : "pipeline1",
+      "name" : "pipeline1",
+      "path" : "external_sql_simple_project/.prophecy/ide/pipelines/pipeline1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
+        "label" : "OrchestrationSource_0"
+      } ],
+      "sources" : [ {
+        "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
+        "label" : "OrchestrationSource_0"
+      } ]
+    }
+  },
   "dependenciesContainer" : {
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
