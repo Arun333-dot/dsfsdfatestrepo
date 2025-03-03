@@ -2,7 +2,7 @@
   "id" : "ghjghj",
   "metainfo" : {
     "label" : "ghjghj",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
