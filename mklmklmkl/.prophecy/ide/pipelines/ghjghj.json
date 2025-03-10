@@ -2,7 +2,7 @@
   "id" : "ghjghj",
   "metainfo" : {
     "label" : "ghjghj",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -47,6 +47,38 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "d4JeAXHUAC3jAIPQDOwrr$$88dcqijPK4KPYW_ToRaUs",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Vo5xNW5QxiFTtg8qGCZfz$$msXZSPKefTCc4Y-KU_mYM" : {
+      "id" : "Vo5xNW5QxiFTtg8qGCZfz$$msXZSPKefTCc4Y-KU_mYM",
+      "component" : "OrchestrationSource",
+      "kind" : "S3Source",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1100,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "s3",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : { },
+        "format" : {
+          "properties" : { },
+          "kind" : "csv",
+          "category" : "file"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "x8N8BR0CwJYZozgXudpeG$$WR84JF4NJNMqf6vEqgWFm",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
