@@ -1,0 +1,112 @@
+{
+  "id" : "jhkj",
+  "metainfo" : {
+    "label" : "jhkj",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "jhkj##tPJMBGds" : {
+      "id" : "jhkj##tPJMBGds",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "jhkj",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "L6M6OWwO",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "tgLwA3yh",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "aP98gpPS2stnEluFRBP4X$$EhNZ_hGRCNAjJiHC5YXZ9" : {
+      "id" : "aP98gpPS2stnEluFRBP4X$$EhNZ_hGRCNAjJiHC5YXZ9",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -1100,
+        "y" : -440,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Txg6sbxpmHHqActrrVo2M$$hYIcO_SgZrAJS_W9mQ-aR",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "SKJoXJ8LkiTjiyrcYBlMF$$k_nhJ2GXOBMPIhL-HCC3G",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "OQAJLVpV1UWt0jxhRBlaB$$mhVJ5JFVqrio2rQETVawb" : {
+      "id" : "OQAJLVpV1UWt0jxhRBlaB$$mhVJ5JFVqrio2rQETVawb",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -960,
+        "y" : -440,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "47DdPSr-8Y6tWmkW7lK5c$$m7Lk2l8CLriabsZt5O36y",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "1hg4aX9UU_6DEwKsdnpJ_$$sbmu-FCYt7iENa3m9Jrdi",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
