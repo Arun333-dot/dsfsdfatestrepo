@@ -20,33 +20,6 @@
     }
   },
   "processes" : {
-    "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw" : {
-      "id" : "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw",
-      "component" : "Model",
-      "metadata" : {
-        "label" : "model_ghjghj_Aggregate_1",
-        "phase" : 0
-      },
-      "properties" : {
-        "modelName" : "model_ghjghj_Aggregate_1"
-      },
-      "visualMetaInfo" : {
-        "visualProcessIds" : [ "prophecy__temp_ghjghj_post_Aggregate_1_0", "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw" ],
-        "type" : "table",
-        "isTemporaryTable" : true
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "model_ghjghj_Aggregate_1_in_1",
-          "slug" : "in_1"
-        } ],
-        "outputs" : [ {
-          "id" : "model_ghjghj_Aggregate_1_out_1",
-          "slug" : "out_1"
-        } ],
-        "isCustomOutputSchema" : false
-      }
-    },
     "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1" : {
       "id" : "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1",
       "component" : "OrchestrationSource",
@@ -75,6 +48,33 @@
         "outputs" : [ {
           "id" : "d4JeAXHUAC3jAIPQDOwrr$$88dcqijPK4KPYW_ToRaUs",
           "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw" : {
+      "id" : "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "model_ghjghj_Aggregate_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "model_ghjghj_Aggregate_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "prophecy__temp_ghjghj_post_Aggregate_1_0", "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw" ],
+        "type" : "table",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "model_ghjghj_Aggregate_1_in_1",
+          "slug" : "in_1"
+        } ],
+        "outputs" : [ {
+          "id" : "model_ghjghj_Aggregate_1_out_1",
+          "slug" : "out_1"
         } ],
         "isCustomOutputSchema" : false
       }

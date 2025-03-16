@@ -26,10 +26,7 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ {
-        "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
-        "label" : "OrchestrationSource_0"
-      } ],
+      "preview" : [ ],
       "sources" : [ {
         "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
         "label" : "OrchestrationSource_0"
@@ -45,13 +42,7 @@
           "fields" : [ ]
         }
       },
-      "preview" : [ {
-        "id" : "Ru5JFzzMNDHUtvLd1jwby$$Fn-_OVSLAcjP9uVZoASkw",
-        "label" : "Aggregate_1"
-      }, {
-        "id" : "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1",
-        "label" : "OrchestrationSource_0"
-      } ],
+      "preview" : [ ],
       "sources" : [ {
         "id" : "R9B72ItFzRrMHr_AKL-K-$$tdfjuphJ8vINHgGIMPGt1",
         "label" : "OrchestrationSource_0"
