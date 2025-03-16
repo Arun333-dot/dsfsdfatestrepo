@@ -1,0 +1,13 @@
+{
+  "function3" : {
+    "name" : "function3",
+    "macroType" : "expression",
+    "definition" : "",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ ]
+    },
+    "staleState" : "none",
+    "version" : 0
+  }
+}
