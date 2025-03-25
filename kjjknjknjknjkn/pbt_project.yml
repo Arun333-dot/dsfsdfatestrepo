@@ -153,11 +153,11 @@ sqlOrchestratorPipelines:
     description: null
     author: arunsharma+admin@prophecy.io
     files:
-    - models/p4/model_p4_OrderBy_1_1_1.sql
     - models/p4/schema.yml
     - models/p4/model_p4_OrderBy_1_1.sql
-    - models/p4/model_p4_OrderBy_1_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1_1.sql
     - models/p4/model_p4_Reformat_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1_2.sql
     - pipelines/p4.py
     createdAt: '2025-03-25 08:29:18'
   .prophecy/metadata/sqlorchestratorpipeline/p6777:
