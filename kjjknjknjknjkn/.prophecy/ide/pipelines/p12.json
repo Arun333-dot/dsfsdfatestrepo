@@ -1,0 +1,17 @@
+{
+  "id" : "p12",
+  "metainfo" : {
+    "label" : "p12",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

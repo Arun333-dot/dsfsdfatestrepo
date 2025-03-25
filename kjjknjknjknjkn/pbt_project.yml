@@ -1,0 +1,213 @@
+name: sql_simple_project_7
+description: ''
+version: '11'
+author: arunsharma+admin@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-25 07:28:10'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-03-25 07:28:13'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/qa_team_qa_database:
+    name: qa_team.qa_database
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-03-25 11:32:08'
+    tables:
+    - name: customer
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: arunsharma+admin@prophecy.io
+      createdAt: '2025-03-25 11:32:08'
+sqlUnreferencedSources: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p6:
+    name: p6
+    schema: null
+    description: null
+    author: arunsharma+nonadmin@prophecy.io
+    files:
+    - pipelines/p6.py
+    createdAt: '2025-03-25 11:01:51'
+  .prophecy/metadata/sqlorchestratorpipeline/p78:
+    name: p78
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p78.py
+    createdAt: '2025-03-25 16:12:55'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p2.py
+    createdAt: '2025-03-25 07:39:25'
+  .prophecy/metadata/sqlorchestratorpipeline/p15:
+    name: p15
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p15.py
+    createdAt: '2025-03-25 16:16:23'
+  .prophecy/metadata/sqlorchestratorpipeline/p5:
+    name: p5
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p5/model_p5_Limit_1.sql
+    - models/p5/schema.yml
+    - models/p5/model_p5_OrderBy_1.sql
+    - pipelines/p5.py
+    createdAt: '2025-03-25 10:15:41'
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p1.py
+    createdAt: '2025-03-25 07:28:28'
+  .prophecy/metadata/sqlorchestratorpipeline/p14:
+    name: p14
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p14.py
+    createdAt: '2025-03-25 16:15:46'
+  .prophecy/metadata/sqlorchestratorpipeline/p12:
+    name: p12
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p12.py
+    createdAt: '2025-03-25 16:13:53'
+  .prophecy/metadata/sqlorchestratorpipeline/p9:
+    name: p9
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p9.py
+    createdAt: '2025-03-25 16:11:34'
+  .prophecy/metadata/sqlorchestratorpipeline/p11:
+    name: p11
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p11.py
+    createdAt: '2025-03-25 16:13:36'
+  .prophecy/metadata/sqlorchestratorpipeline/p13:
+    name: p13
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p13.py
+    createdAt: '2025-03-25 16:14:49'
+  .prophecy/metadata/sqlorchestratorpipeline/p4:
+    name: p4
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - models/p4/model_p4_OrderBy_1_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1.sql
+    - models/p4/model_p4_Reformat_1_2.sql
+    - models/p4/model_p4_OrderBy_1_1_1.sql
+    - models/p4/schema.yml
+    - pipelines/p4.py
+    createdAt: '2025-03-25 08:29:18'
+  .prophecy/metadata/sqlorchestratorpipeline/p6777:
+    name: p6777
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p6777.py
+    createdAt: '2025-03-25 16:37:25'
+  .prophecy/metadata/sqlorchestratorpipeline/p8:
+    name: p8
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p8.py
+    createdAt: '2025-03-25 16:11:07'
+  .prophecy/metadata/sqlorchestratorpipeline/p10:
+    name: p10
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p10.py
+    createdAt: '2025-03-25 16:12:17'
+  .prophecy/metadata/sqlorchestratorpipeline/p677:
+    name: p677
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p677.py
+    createdAt: '2025-03-25 16:36:04'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: arunsharma+admin@prophecy.io
+    files:
+    - pipelines/p3.py
+    createdAt: '2025-03-25 08:08:04'
+sqlBusinessApps: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: arunsharma+admin@prophecy.io
+  createdAt: '2025-03-25 07:28:10'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
