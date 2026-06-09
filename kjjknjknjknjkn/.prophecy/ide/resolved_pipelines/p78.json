@@ -1,0 +1,17 @@
+{
+  "id" : "p78",
+  "metainfo" : {
+    "label" : "p78",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

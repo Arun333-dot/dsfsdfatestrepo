@@ -1,0 +1,268 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "b6FgUWcvXKJpYARqRl9GE" : {
+      "id" : "b6FgUWcvXKJpYARqRl9GE",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -1540,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "@id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "author"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "title"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "genre"
+              }, {
+                "dataType" : {
+                  "type" : "float64"
+                },
+                "name" : "price"
+              }, {
+                "dataType" : {
+                  "type" : "date32"
+                },
+                "name" : "publish_date"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "data_type"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "description"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/book_catalog_with_types.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "dbe761b6-cae9-4722-89ba-69f4a6c809e9",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "author",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "title",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "genre",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "price",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "publish_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "data_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "description",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "m6pkeN7O5N6Fa3KFeoDsA" : {
+      "id" : "m6pkeN7O5N6Fa3KFeoDsA",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -660,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : { }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/complex_data_types_132123123.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4b700472-c2c4-4e34-8736-de8d052ef175",
+          "slug" : "out0"
+        } ]
+      }
+    },
+    "a6rA1ZTrU7KslXsCQv1mY" : {
+      "id" : "a6rA1ZTrU7KslXsCQv1mY",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_2",
+        "x" : -1780,
+        "y" : -780,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "@type"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "utf8"
+                  },
+                  "type" : "Array"
+                },
+                "name" : "Item"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "utf8"
+                  },
+                  "type" : "Array"
+                },
+                "name" : "Field"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/complex_data_xml.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "26a6bf93-9f94-4fec-a6f3-3ffeff537a27",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "@type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Item",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "Field",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

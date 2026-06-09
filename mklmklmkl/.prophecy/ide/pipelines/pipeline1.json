@@ -1,0 +1,58 @@
+{
+  "id" : "pipeline1",
+  "metainfo" : {
+    "label" : "pipeline1",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "0 2 * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ]
+    }
+  },
+  "processes" : {
+    "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra" : {
+      "id" : "X_SmINrKT9Ov4v1kVO2YW$$7p5B8UPhJrFDyVBneYfra",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -1160,
+        "y" : -500,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "type" : "connector",
+          "properties" : { }
+        },
+        "properties" : { },
+        "format" : {
+          "kind" : "csv",
+          "category" : "File",
+          "properties" : { }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "IxhwbENW4vrKB2HVkJtVC$$uQPqWDgg4Lmh5dW7rI4BB",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

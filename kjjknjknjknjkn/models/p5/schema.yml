@@ -1,0 +1,27 @@
+---
+version: 2
+models:
+- name: "model_p5_Limit_1"
+  tags:
+  - "prophecy_temp"
+- name: "model_p5_OrderBy_1"
+  tags:
+  - "prophecy_temp"
+sources:
+- name: "prophecy__temp_p5_source"
+  database: "hive_metastore"
+  schema: "arun123"
+  tags:
+  - "prophecy_temp"
+  config:
+    enabled: true
+  tables:
+  - name: "prophecy__temp_p5_post_Limit_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p5_post_OrderBy_1_0"
+    tags:
+    - "prophecy_temp"
+  - name: "prophecy__temp_p5_post_SFTPSource_1_0"
+    tags:
+    - "prophecy_temp"

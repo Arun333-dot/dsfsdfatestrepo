@@ -1,0 +1,10 @@
+---
+version: 2
+sources:
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "customer"
+    columns: []
+    type: "table"

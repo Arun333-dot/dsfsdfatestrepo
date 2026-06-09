@@ -1,0 +1,110 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "cdp235OG95dzK7BsqOMRj" : {
+      "id" : "cdp235OG95dzK7BsqOMRj",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_0",
+        "x" : -1020,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "name" : "id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "name"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "email"
+              }, {
+                "dataType" : {
+                  "dataType" : {
+                    "type" : "utf8"
+                  },
+                  "type" : "Array"
+                },
+                "name" : "item"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/sample_data.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "5c5b59bd-76a5-4036-98f3-7b628a705f47",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "item",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,389 @@
+{
+  "name" : "sql_simple_project_7",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p10" : {
+      "id" : "p10",
+      "name" : "p10",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p10.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p12" : {
+      "id" : "p12",
+      "name" : "p12",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p12.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p4" : {
+      "id" : "p4",
+      "name" : "p4",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p4.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "aQwIo-CmJ1CVJj76-xm2w",
+        "label" : "SFTPSource_1"
+      } ]
+    },
+    "p5" : {
+      "id" : "p5",
+      "name" : "p5",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p5.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "-UcoPg6w06ha7gmUfvyVW$$6ITnGybau4u2vmeCXwIti",
+        "label" : "SFTPSource_1"
+      } ]
+    },
+    "p677" : {
+      "id" : "p677",
+      "name" : "p677",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p677.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p15" : {
+      "id" : "p15",
+      "name" : "p15",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p15.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p3" : {
+      "id" : "p3",
+      "name" : "p3",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p3.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "nCWotUzNseC7kOqVh1eye$$sdHGLSZIIajL7huPuKabO",
+        "label" : "empty_output_xml"
+      }, {
+        "id" : "LKiZICBbNu0UGM40sNs2w",
+        "label" : "SFTPSource_1"
+      } ]
+    },
+    "p78" : {
+      "id" : "p78",
+      "name" : "p78",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p78.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p11" : {
+      "id" : "p11",
+      "name" : "p11",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p11.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p2" : {
+      "id" : "p2",
+      "name" : "p2",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p2.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "b6FgUWcvXKJpYARqRl9GE",
+        "label" : "SFTPSource_0"
+      }, {
+        "id" : "m6pkeN7O5N6Fa3KFeoDsA",
+        "label" : "SFTPSource_1"
+      }, {
+        "id" : "a6rA1ZTrU7KslXsCQv1mY",
+        "label" : "SFTPSource_2"
+      } ]
+    },
+    "p14" : {
+      "id" : "p14",
+      "name" : "p14",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p14.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p9" : {
+      "id" : "p9",
+      "name" : "p9",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p9.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ {
+        "id" : "cdp235OG95dzK7BsqOMRj",
+        "label" : "SFTPSource_0"
+      } ]
+    },
+    "p13" : {
+      "id" : "p13",
+      "name" : "p13",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p13.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p6" : {
+      "id" : "p6",
+      "name" : "p6",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p6.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p8" : {
+      "id" : "p8",
+      "name" : "p8",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p8.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    },
+    "p6777" : {
+      "id" : "p6777",
+      "name" : "p6777",
+      "path" : "sql_simple_project_7/.prophecy/ide/pipelines/p6777.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ ],
+      "sources" : [ ]
+    }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_0",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_1",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_10",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_11",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_12",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_13",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_14",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_15",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_16",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_17",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_18",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_19",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_3",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_4",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_5",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_6",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_7",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_8",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_perf_9",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_performance",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "lastError" : "Building dependency project sql_simple_project_12 failed. Empty model. Please populate the graph to get started.,\nEmpty model. Please populate the graph to get started.,\nmodel1: Please connect the input port,\nmodel2: Please connect the input port",
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}

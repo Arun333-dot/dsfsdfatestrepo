@@ -1,0 +1,17 @@
+{
+  "id" : "p6",
+  "metainfo" : {
+    "label" : "p6",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

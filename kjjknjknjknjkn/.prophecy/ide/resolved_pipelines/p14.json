@@ -1,0 +1,17 @@
+{
+  "id" : "p14",
+  "metainfo" : {
+    "label" : "p14",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : { },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

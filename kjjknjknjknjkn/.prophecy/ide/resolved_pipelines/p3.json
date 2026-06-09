@@ -1,0 +1,160 @@
+{
+  "id" : "p3",
+  "metainfo" : {
+    "label" : "p3",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "processes" : {
+    "nCWotUzNseC7kOqVh1eye$$sdHGLSZIIajL7huPuKabO" : {
+      "id" : "nCWotUzNseC7kOqVh1eye$$sdHGLSZIIajL7huPuKabO",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "empty_output_xml",
+        "x" : -920,
+        "y" : -480,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp"
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "category" : "file",
+          "kind" : "xml",
+          "properties" : { }
+        },
+        "properties" : {
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "error in the data that you throw"
+                }
+              } ]
+            }
+          }
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sEccejmeMABzPuFRWKG2c$$cxVahaal7r5Luaz3IIB1d",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "LKiZICBbNu0UGM40sNs2w" : {
+      "id" : "LKiZICBbNu0UGM40sNs2w",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "SFTPSource_1",
+        "x" : -1900,
+        "y" : -920,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "authMethod" : "password",
+            "id" : "sftp",
+            "port" : 22
+          },
+          "type" : "connector"
+        },
+        "format" : {
+          "kind" : "xml",
+          "properties" : {
+            "schema" : {
+              "fields" : [ {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "@id"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "Email"
+              }, {
+                "dataType" : {
+                  "type" : "bool"
+                },
+                "name" : "IsActive"
+              }, {
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "name" : "Name"
+              }, {
+                "dataType" : {
+                  "type" : "int64"
+                },
+                "name" : "Age"
+              } ],
+              "providerType" : "arrow"
+            }
+          }
+        },
+        "properties" : {
+          "filePath" : "/prophecy-sftp/aruns/records_table.xml"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "f41cd996-56a9-402d-9530-b409a22da9bc",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "@id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IsActive",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "Name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "Age",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
