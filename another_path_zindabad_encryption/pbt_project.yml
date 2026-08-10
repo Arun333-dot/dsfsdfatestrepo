@@ -1,0 +1,79 @@
+name: encryption_check_github_spark
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: encryptioncheckgithubspark
+  parentArtefactID: sharedteam
+  buildSystem: maven
+  author: null
+  createdAt: '2026-08-10 10:38:27'
+pipelines:
+  pipelines/p1:
+    name: p1
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2026-08-10 10:38:27'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-08-10 10:38:27'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2026-08-10T10:38:27.455186Z'
+  name: plibMaven
+  version: 9.5.1-SNAPSHOT
+  id: '689976902'
+  createdAt: '2026-08-10T10:38:27.455186Z'
+  type: plibMaven
+projectDependencies:
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_1.git&subPath=
+    version: 0.2.6.7
+    isDefault: true
+    author: null
+    createdAt: '2026-08-10 10:37:58'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/cnXuekdF_team_5/cnXuekdF_project_2.git&subPath=
+    version: 0.0.7
+    isDefault: true
+    author: null
+    createdAt: '2026-08-10 10:37:58'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
